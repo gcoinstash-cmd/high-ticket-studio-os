@@ -47,17 +47,17 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
               </div>
               <div>
                 <h3 className="text-xl font-light tracking-tight text-white font-sans">Offer Architect Studio Portal</h3>
-                <p className="text-xs text-slate-400">High-Ticket Contract & Asset Governance</p>
+                <p className="text-base text-zinc-200 leading-relaxed">High-Ticket Contract & Asset Governance</p>
               </div>
             </div>
 
             <form onSubmit={handleVerify} className="space-y-4">
               <div>
-                <label className="block text-xs uppercase tracking-wider text-slate-400 mb-2">
+                <label className="block text-sm font-semibold uppercase tracking-wider text-slate-400 mb-2">
                   Studio Architect Passkey
                 </label>
                 <div className="relative">
-                  <Key className="w-4 h-4 absolute left-3 top-3 text-slate-500" />
+                  <Key className="w-4 h-4 absolute left-3 top-3 text-slate-300" />
                   <input
                     type="password"
                     value={passkey}
@@ -81,7 +81,7 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                 <button
                   type="button"
                   onClick={handleQuickFill}
-                  className="px-4 py-2.5 bg-slate-900 hover:bg-slate-800 border border-indigo-500/30 text-indigo-400 text-xs rounded-xl transition-all"
+                  className="px-5 py-3 min-h-[44px].5 bg-slate-900 hover:bg-slate-800 border border-indigo-500/30 text-indigo-400 text-base font-semibold min-h-[44px] rounded-xl transition-all"
                 >
                   ⚡ Auto-Fill Demo Passkey
                 </button>
@@ -94,25 +94,25 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
               <CheckCircle className="w-6 h-6" />
               <div>
                 <h4 className="text-base font-medium text-white font-sans">Principal Architect Authenticated</h4>
-                <p className="text-xs text-slate-400">Passkey: architect2026 • Clearance: Agency Founder</p>
+                <p className="text-base text-zinc-200 leading-relaxed">Passkey: architect2026 • Clearance: Agency Founder</p>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-3 text-left text-xs">
               <div className="p-3 bg-slate-900/50 rounded-xl border border-slate-800">
-                <span className="text-slate-500 block uppercase">Productized Assets</span>
+                <span className="text-slate-300 block uppercase">Productized Assets</span>
                 <span className="text-slate-100 font-semibold text-sm">18 Blueprints</span>
               </div>
               <div className="p-3 bg-slate-900/50 rounded-xl border border-slate-800">
-                <span className="text-slate-500 block uppercase">VIP Funnel Retainers</span>
+                <span className="text-slate-300 block uppercase">VIP Funnel Retainers</span>
                 <span className="text-indigo-400 font-semibold text-sm">$3,500/mo Active</span>
               </div>
               <div className="p-3 bg-slate-900/50 rounded-xl border border-slate-800">
-                <span className="text-slate-500 block uppercase">Pipeline Value</span>
+                <span className="text-slate-300 block uppercase">Pipeline Value</span>
                 <span className="text-emerald-400 font-semibold text-sm">$42,000 ARR</span>
               </div>
               <div className="p-3 bg-slate-900/50 rounded-xl border border-slate-800">
-                <span className="text-slate-500 block uppercase">RLS Security</span>
+                <span className="text-slate-300 block uppercase">RLS Security</span>
                 <span className="text-emerald-400 font-semibold text-sm">ACTIVE</span>
               </div>
             </div>

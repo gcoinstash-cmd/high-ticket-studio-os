@@ -416,10 +416,10 @@ export default function App() {
       <div className="bg-slate-900 text-slate-100 py-3 px-4 border-b border-slate-800">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-xs gap-2">
           <div className="flex items-center gap-2">
-            <span className="bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 font-semibold px-2 py-0.5 rounded text-[10px] tracking-wide font-mono uppercase">Blueprint System</span>
+            <span className="bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 font-semibold px-2 py-0.5 rounded text-xs font-semibold tracking-wider tracking-wide font-mono uppercase">Blueprint System</span>
             <span>Client Acquisition Offer Architecture Studio v1.2</span>
           </div>
-          <div className="text-slate-400 font-mono text-[11px]">
+          <div className="text-slate-400 font-mono text-xs font-semibold">
             System Time Flag: <span className="text-indigo-400">2026-05-29 UTC</span>
           </div>
         </div>
@@ -435,7 +435,7 @@ export default function App() {
             <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight leading-none sm:text-5xl">
               OfferArchitect Studio
             </h1>
-            <p className="mt-3 text-lg text-slate-500/90 leading-relaxed font-light">
+            <p className="mt-3 text-lg text-slate-300/90 leading-relaxed font-light">
               Design premium, highly automated micro-assets and system templates you can sell as a standalone productized system for <span className="text-slate-900 font-medium">$350+</span> &mdash; then leverage them into high-ticket custom implementation retainers for <span className="text-slate-900 font-medium">$3,500+</span>.
             </p>
           </div>
@@ -475,7 +475,7 @@ export default function App() {
             <h2 className="text-xs font-mono font-bold tracking-wider text-slate-400 uppercase flex items-center gap-1.5 mb-4">
               <BookOpen className="w-3.5 h-3.5" /> Core Curation Hub (Presets)
             </h2>
-            <p className="text-xs text-slate-500 mb-5 leading-relaxed">
+            <p className="text-xs text-slate-300 mb-5 leading-relaxed">
               Select one of our highly profitable, pre-designed templates tailored for professional service providers wanting to automate client flow.
             </p>
 
@@ -493,26 +493,26 @@ export default function App() {
                     }`}
                   >
                     <div className="flex justify-between items-start">
-                      <span className={`text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded ${
+                      <span className={`text-xs font-semibold tracking-wider font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded ${
                         isSelected ? "bg-indigo-500/20 text-indigo-300 border border-indigo-400/20" : "bg-slate-200/80 text-slate-600"
                       }`}>
                         {p.platform.split(" ")[0]} Project
                       </span>
-                      <div className="flex items-center gap-1 text-[11px] font-mono">
+                      <div className="flex items-center gap-1 text-xs font-semibold font-mono">
                         <TrendingUp className={`w-3.5 h-3.5 ${isSelected ? "text-emerald-400" : "text-emerald-500"}`} />
-                        <span className={isSelected ? "text-slate-200" : "text-slate-500"}>10x Retainer</span>
+                        <span className={isSelected ? "text-slate-200" : "text-slate-300"}>10x Retainer</span>
                       </div>
                     </div>
                     
                     <h3 className="font-semibold text-sm mt-2 tracking-tight">
                       {p.packageName}
                     </h3>
-                    <p className={`text-xs mt-1 font-light line-clamp-2 ${isSelected ? "text-slate-300" : "text-slate-500"}`}>
+                    <p className={`text-xs mt-1 font-light line-clamp-2 ${isSelected ? "text-slate-300" : "text-slate-300"}`}>
                       {p.tagline}
                     </p>
                     
-                    <div className="flex items-center gap-2 mt-3.5 pt-3 border-t border-dashed justify-between text-[11px] font-mono">
-                      <span className={isSelected ? "text-slate-400" : "text-slate-500"}>Target: </span>
+                    <div className="flex items-center gap-2 mt-3.5 pt-3 border-t border-dashed justify-between text-xs font-semibold font-mono">
+                      <span className={isSelected ? "text-slate-400" : "text-slate-300"}>Target: </span>
                       <span className={`font-semibold ${isSelected ? "text-white" : "text-slate-900"}`}>{p.niche.split(" ")[0]} Niche</span>
                     </div>
                   </button>
@@ -528,13 +528,13 @@ export default function App() {
                 <Sparkles className="w-3.5 h-3.5 text-indigo-500 animate-pulse" /> Offer Architect Forge
               </h2>
               {generatedBlueprint && (
-                <span className="bg-emerald-50 text-emerald-700 text-[10px] font-mono font-semibold px-2 py-0.5 rounded border border-emerald-200 flex items-center gap-1">
+                <span className="bg-emerald-50 text-emerald-700 text-xs font-semibold tracking-wider font-mono font-semibold px-2 py-0.5 rounded border border-emerald-200 flex items-center gap-1">
                   <ShieldCheck className="w-3 h-3" /> Custom Generated Active
                 </span>
               )}
             </div>
             
-            <p className="text-xs text-slate-500 leading-relaxed mb-6">
+            <p className="text-xs text-slate-300 leading-relaxed mb-6">
               Need a blueprint for a specific target niche? Input your profile, target platform, and budget pricing below to generate a comprehensive template concept and enterprise proposal strategy.
             </p>
 
@@ -543,7 +543,7 @@ export default function App() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Price targets fields */}
                 <div>
-                  <label className="block text-[11px] font-mono uppercase font-bold text-slate-500 mb-1">
+                  <label className="block text-sm font-semibold font-mono uppercase font-bold text-slate-300 mb-1">
                     Store Price Target ($350+)
                   </label>
                   <div className="relative">
@@ -559,7 +559,7 @@ export default function App() {
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-mono uppercase font-bold text-slate-500 mb-1">
+                  <label className="block text-sm font-semibold font-mono uppercase font-bold text-slate-300 mb-1">
                     Upsell Target ($3,500+)
                   </label>
                   <div className="relative">
@@ -576,7 +576,7 @@ export default function App() {
               </div>
 
               <div>
-                <label className="block text-[11px] font-mono uppercase font-bold text-slate-500 mb-1">
+                <label className="block text-sm font-semibold font-mono uppercase font-bold text-slate-300 mb-1">
                   Target Niche <span className="text-rose-500">*</span>
                 </label>
                 <input
@@ -590,7 +590,7 @@ export default function App() {
               </div>
 
               <div>
-                <label className="block text-[11px] font-mono uppercase font-bold text-slate-500 mb-1">
+                <label className="block text-sm font-semibold font-mono uppercase font-bold text-slate-300 mb-1">
                   Underlying Ecosystem Platform <span className="text-rose-500">*</span>
                 </label>
                 <input
@@ -604,7 +604,7 @@ export default function App() {
               </div>
 
               <div>
-                <label className="block text-[11px] font-mono uppercase font-bold text-slate-500 mb-1">
+                <label className="block text-sm font-semibold font-mono uppercase font-bold text-slate-300 mb-1">
                   Your Profile / Background (Optional)
                 </label>
                 <textarea
@@ -616,7 +616,7 @@ export default function App() {
               </div>
 
               <div>
-                <label className="block text-[11px] font-mono uppercase font-bold text-slate-500 mb-1">
+                <label className="block text-sm font-semibold font-mono uppercase font-bold text-slate-300 mb-1">
                   Core Expertise (Optional)
                 </label>
                 <input
@@ -666,11 +666,11 @@ export default function App() {
             <div className="border-b border-slate-200/80 bg-slate-50/60 p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] uppercase font-mono font-bold px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 border border-indigo-200">
+                  <span className="text-xs font-semibold tracking-wider uppercase font-mono font-bold px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 border border-indigo-200">
                     Active Environment: Workspace
                   </span>
                   {generatedBlueprint && (
-                    <span className="text-[10px] uppercase font-mono font-bold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    <span className="text-xs font-semibold tracking-wider uppercase font-mono font-bold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
                       Forge-Generated
                     </span>
                   )}
@@ -678,7 +678,7 @@ export default function App() {
                 <h2 className="text-xl font-bold tracking-tight text-slate-900 mt-2">
                   {currentBlueprint.packageName}
                 </h2>
-                <p className="text-xs text-slate-500 mt-0.5">
+                <p className="text-xs text-slate-300 mt-0.5">
                   Integrated client automated platform for: <span className="text-slate-700 font-medium">{currentBlueprint.niche}</span>
                 </p>
               </div>
@@ -687,7 +687,7 @@ export default function App() {
                 <span className="text-2xl font-black text-slate-900 leading-none">
                   {pricePoint || "$350"}
                 </span>
-                <span className="text-[10px] font-mono text-slate-400 font-medium uppercase tracking-wide">
+                <span className="text-xs font-semibold tracking-wider font-mono text-slate-400 font-medium uppercase tracking-wide">
                   Assets Leverage Blueprint
                 </span>
               </div>
@@ -785,12 +785,12 @@ export default function App() {
                     <div className="absolute -top-12 -right-12 w-32 h-32 bg-indigo-500/10 rounded-full blur-2xl" />
                     <div className="flex items-center gap-2 mb-2">
                       <ShieldCheck className="w-4 h-4 text-indigo-400" />
-                      <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-indigo-300">Operational Pain Point Solved</span>
+                      <span className="text-xs font-semibold tracking-wider font-mono font-bold uppercase tracking-widest text-indigo-300">Operational Pain Point Solved</span>
                     </div>
                     <p className="text-xs text-slate-300 leading-relaxed font-light">
                       {currentBlueprint.valueProposition}
                     </p>
-                    <div className="mt-4 pt-3 border-t border-slate-800 flex justify-between items-center text-[11px] font-mono text-slate-400">
+                    <div className="mt-4 pt-3 border-t border-slate-800 flex justify-between items-center text-xs font-semibold font-mono text-slate-400">
                       <span>Platform Tech Stack:</span>
                       <span className="text-white font-medium">{currentBlueprint.platform}</span>
                     </div>
@@ -805,7 +805,7 @@ export default function App() {
                     {currentBlueprint.coreEcosystemModules.map((module, mIdx) => (
                       <div key={mIdx} className="bg-white border border-slate-200/80 rounded-xl p-5 hover:border-slate-300 hover:shadow-xs transition-all duration-150">
                         <div className="flex items-center gap-2 mb-2">
-                          <span className="w-5 h-5 rounded-full bg-slate-100 text-slate-700 font-mono text-[11px] flex items-center justify-center font-bold">
+                          <span className="w-5 h-5 rounded-full bg-slate-100 text-slate-700 font-mono text-xs font-semibold flex items-center justify-center font-bold">
                             {mIdx + 1}
                           </span>
                           <h4 className="font-semibold text-sm tracking-tight text-slate-900">
@@ -813,17 +813,17 @@ export default function App() {
                           </h4>
                         </div>
                         
-                        <p className="text-xs text-slate-500 leading-relaxed pl-7">
+                        <p className="text-xs text-slate-300 leading-relaxed pl-7">
                           {module.purpose}
                         </p>
 
                         <div className="mt-4 pl-7">
-                          <h5 className="text-[10px] font-mono font-semibold uppercase text-slate-400 mb-2">
+                          <h5 className="text-xs font-semibold tracking-wider font-mono font-semibold uppercase text-slate-400 mb-2">
                             Structural Database Tables / Interfaces
                           </h5>
                           <div className="flex flex-wrap gap-1.5">
                             {module.keyComponents.map((component, cIdx) => (
-                              <span key={cIdx} className="text-[11px] px-2.5 py-1 rounded bg-slate-100 text-slate-600 font-medium">
+                              <span key={cIdx} className="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 text-slate-600 font-medium">
                                 {component}
                               </span>
                             ))}
@@ -832,7 +832,7 @@ export default function App() {
 
                         {module.automationFormula && (
                           <div className="mt-4 pl-7 pt-4 border-t border-slate-100">
-                            <h5 className="text-[10px] font-mono font-semibold uppercase text-indigo-500 mb-1.5 flex items-center gap-1">
+                            <h5 className="text-xs font-semibold tracking-wider font-mono font-semibold uppercase text-indigo-500 mb-1.5 flex items-center gap-1">
                               <Cpu className="w-3.5 h-3.5" /> Make / Zapier Integration Formula
                             </h5>
                             <p className="text-xs text-indigo-950 bg-indigo-50/50 border border-indigo-100/50 rounded-lg p-3 leading-relaxed font-mono font-light">
@@ -858,7 +858,7 @@ export default function App() {
                         <Sparkles className="w-6 h-6 text-indigo-400" />
                       </div>
                       <div>
-                        <span className="text-[10px] font-mono tracking-widest font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 uppercase px-2.5 py-1 rounded">
+                        <span className="text-xs font-semibold tracking-wider font-mono tracking-widest font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 uppercase px-2.5 py-1 rounded">
                           Copywriting Framework & Asset Pitch Deck
                         </span>
                         <h3 className="text-xl font-bold text-white mt-2.5">
@@ -880,7 +880,7 @@ export default function App() {
                       <h4 className="text-base font-bold text-slate-900 mt-2">
                         🎯 The Speed-to-Lead & Lost Pipeline Headline System
                       </h4>
-                      <p className="text-xs text-slate-500 font-light mt-1">
+                      <p className="text-xs text-slate-300 font-light mt-1">
                         High-converting headline splits designed directly to snap boutique agency founders out of complacency.
                       </p>
                     </div>
@@ -917,7 +917,7 @@ export default function App() {
                               <button
                                 type="button"
                                 onClick={() => handleCopyText(copyString, `headline-${idx}`)}
-                                className="text-[10px] bg-white border border-slate-200 hover:bg-slate-50 text-slate-500 hover:text-slate-900 px-2.5 py-1 rounded flex items-center gap-1 font-mono hover:shadow-xs transition"
+                                className="text-xs font-semibold tracking-wider bg-white border border-slate-200 hover:bg-slate-50 text-slate-300 hover:text-slate-900 px-2.5 py-1 rounded flex items-center gap-1 font-mono hover:shadow-xs transition"
                               >
                                 {copiedState === `headline-${idx}` ? (
                                   <>
@@ -954,7 +954,7 @@ export default function App() {
                       <h4 className="text-base font-bold text-slate-900 mt-2">
                         ⚖️ The Comparison Matrix: Manual Overlap vs. Automated Client Flow
                       </h4>
-                      <p className="text-xs text-slate-500 font-light mt-1">
+                      <p className="text-xs text-slate-300 font-light mt-1">
                         High-impact comparison copy that contrasts structural organizational decay against systemized execution precision.
                       </p>
                     </div>
@@ -1001,7 +1001,7 @@ export default function App() {
                           </div>
                         </div>
 
-                        <div className="pt-3 border-t border-rose-150/50 text-[11px] text-slate-500 italic font-mono text-center">
+                        <div className="pt-3 border-t border-rose-150/50 text-xs font-semibold text-slate-300 italic font-mono text-center">
                           Total Leak: Up to 35% of Pipeline Lost.
                         </div>
                       </div>
@@ -1046,7 +1046,7 @@ export default function App() {
                           </div>
                         </div>
 
-                        <div className="pt-3 border-t border-emerald-150/50 text-[11px] text-emerald-800 font-bold font-mono text-center">
+                        <div className="pt-3 border-t border-emerald-150/50 text-xs font-semibold text-emerald-800 font-bold font-mono text-center">
                           Total Result: 100% Accountability & Maximized LTV.
                         </div>
                       </div>
@@ -1063,7 +1063,7 @@ export default function App() {
                       <h4 className="text-base font-bold text-slate-900 mt-2">
                         💳 Transforming Technical Modules Into Immediate Buyer Value
                       </h4>
-                      <p className="text-xs text-slate-500 font-light mt-1">
+                      <p className="text-xs text-slate-300 font-light mt-1">
                         How to articulate the individual tables and webhooks of your {pricePoint || "$350"} asset as absolute cash generators.
                       </p>
                     </div>
@@ -1105,7 +1105,7 @@ export default function App() {
                                 {mod.num}
                               </span>
                             </div>
-                            <span className="text-[10px] text-slate-500 font-mono block mt-2.5 leading-none">
+                            <span className="text-xs font-semibold tracking-wider text-slate-300 font-mono block mt-2.5 leading-none">
                               ⚙️ Technical: {mod.tech}
                             </span>
                             <h5 className="font-bold text-slate-900 text-sm mt-1">
@@ -1114,7 +1114,7 @@ export default function App() {
                             <p className="text-xs text-slate-700 font-semibold mt-3 italic leading-relaxed">
                               "{mod.benefit}"
                             </p>
-                            <p className="text-[11px] text-slate-550 mt-1.5 leading-relaxed font-light">
+                            <p className="text-xs font-semibold text-slate-550 mt-1.5 leading-relaxed font-light">
                               {mod.desc}
                             </p>
                           </div>
@@ -1132,7 +1132,7 @@ export default function App() {
                       <h4 className="text-base font-bold text-slate-900 mt-2 font-sans">
                         📊 The 3-Tier Strategic Pricing Anchor Stack
                       </h4>
-                      <p className="text-xs text-slate-500 font-light mt-1 font-sans">
+                      <p className="text-xs text-slate-300 font-light mt-1 font-sans">
                         A high-converting comparison architecture that positions the <strong className="text-indigo-600">$350 Base Asset</strong> as an absolute bargain, while priming buyers for group acceleration ($950) or custom high-ticket operations delivery ($3,500+).
                       </p>
                     </div>
@@ -1150,12 +1150,12 @@ export default function App() {
                       >
                         <div className="space-y-4 font-sans">
                           <div className="flex justify-between items-center">
-                            <span className="text-[10px] font-mono tracking-widest font-bold text-slate-400 uppercase">TIER 1 &bull; SELF-GUIDED</span>
+                            <span className="text-xs font-semibold tracking-wider font-mono tracking-widest font-bold text-slate-400 uppercase">TIER 1 &bull; SELF-GUIDED</span>
                             {selectedPricingTier === "base" && <span className="w-1.5 h-1.5 bg-slate-900 rounded-full animate-bounce" />}
                           </div>
                           <div>
                             <h5 className="text-lg font-extrabold text-slate-900 leading-tight">The Base Asset</h5>
-                            <p className="text-xs text-slate-500 font-light mt-1">Instant operational blueprints & duplication links.</p>
+                            <p className="text-xs text-slate-300 font-light mt-1">Instant operational blueprints & duplication links.</p>
                           </div>
                           <div className="py-2">
                             <span className="text-3xl font-black text-slate-900">$350</span>
@@ -1201,12 +1201,12 @@ export default function App() {
                         </div>
                         <div className="space-y-4 font-sans">
                           <div className="flex justify-between items-center pt-1">
-                            <span className="text-[10px] font-mono tracking-widest font-bold text-indigo-650 uppercase">TIER 2 &bull; ACCELERATOR</span>
+                            <span className="text-xs font-semibold tracking-wider font-mono tracking-widest font-bold text-indigo-650 uppercase">TIER 2 &bull; ACCELERATOR</span>
                             {selectedPricingTier === "guided" && <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full animate-bounce" />}
                           </div>
                           <div>
                             <h5 className="text-lg font-extrabold text-slate-900 leading-tight">Guided Accelerator</h5>
-                            <p className="text-xs text-slate-500 font-light mt-1">Base templates + live workshop QA + pre-built JSON.</p>
+                            <p className="text-xs text-slate-300 font-light mt-1">Base templates + live workshop QA + pre-built JSON.</p>
                           </div>
                           <div className="py-2">
                             <span className="text-3xl font-black text-indigo-900">$950</span>
@@ -1249,12 +1249,12 @@ export default function App() {
                       >
                         <div className="space-y-4 font-sans">
                           <div className="flex justify-between items-center">
-                            <span className="text-[10px] font-mono tracking-widest font-bold text-emerald-600 uppercase">TIER 3 &bull; CUSTOM COFOUNDER</span>
+                            <span className="text-xs font-semibold tracking-wider font-mono tracking-widest font-bold text-emerald-600 uppercase">TIER 3 &bull; CUSTOM COFOUNDER</span>
                             {selectedPricingTier === "bespoke" && <span className="w-1.5 h-1.5 bg-emerald-600 rounded-full animate-bounce" />}
                           </div>
                           <div>
                             <h5 className="text-lg font-extrabold text-slate-900 leading-tight">Bespoke Retainer</h5>
-                            <p className="text-xs text-slate-500 font-light mt-1">Full-service 1-on-1 operational execution.</p>
+                            <p className="text-xs text-slate-300 font-light mt-1">Full-service 1-on-1 operational execution.</p>
                           </div>
                           <div className="py-2">
                             <span className="text-3xl font-black text-slate-900">$3,500+</span>
@@ -1323,7 +1323,7 @@ export default function App() {
                       <h4 className="text-base font-bold text-slate-900 mt-2 font-sans">
                         🗯️ The "Pre-Emptive Strike" Objection Framework
                       </h4>
-                      <p className="text-xs text-slate-500 font-light mt-1 font-sans">
+                      <p className="text-xs text-slate-300 font-light mt-1 font-sans">
                         Dismantle buyer resistance before it is ever spoken. Address high-velocity tactical concerns with sharp, authoritative explanations.
                       </p>
                     </div>
@@ -1378,7 +1378,7 @@ export default function App() {
                                 }`}>
                                   <IconComponent className="w-4 h-4" />
                                 </span>
-                                <h5 className="font-extrabold text-slate-900 text-xs md:text-sm font-sans tracking-tight">
+                                <h5 className="font-extrabold text-slate-900 text-base font-semibold font-sans tracking-tight">
                                   {faq.q}
                                 </h5>
                               </div>
@@ -1391,7 +1391,7 @@ export default function App() {
                               <div className="px-4.5 pb-5 pt-1 text-xs text-slate-650 leading-relaxed font-sans border-t border-slate-100 animate-slide-down">
                                 <p className="font-light">{faq.a}</p>
                                 <div className="mt-4 space-y-1.5 pt-3 border-t border-slate-200/50">
-                                  <span className="text-[10px] font-mono font-bold text-slate-450 uppercase tracking-wider block mb-1">
+                                  <span className="text-xs font-semibold tracking-wider font-mono font-bold text-slate-450 uppercase tracking-wider block mb-1">
                                     Strategic Objection Repositioning:
                                   </span>
                                   {faq.bullets.map((bText, bIdx) => (
@@ -1418,7 +1418,7 @@ export default function App() {
                       <h4 className="text-base font-bold text-slate-900 mt-2 font-sans">
                         🎯 The Alignment Filter: Is This For You?
                       </h4>
-                      <p className="text-xs text-slate-500 font-light mt-1 font-sans">
+                      <p className="text-xs text-slate-300 font-light mt-1 font-sans">
                         High-ticket buyers respect extreme transparency. Qualify agency partners up-front with a hardline alignment filter that positions this system as a pristine asset for operators, not a generic utility.
                       </p>
                     </div>
@@ -1459,7 +1459,7 @@ export default function App() {
                           </ul>
                         </div>
                         
-                        <div className="p-3 bg-emerald-500/10 text-emerald-900 rounded-xl text-[11px] font-medium border border-emerald-500/10 flex items-center gap-1.5">
+                        <div className="p-3 bg-emerald-500/10 text-emerald-900 rounded-xl text-xs font-semibold font-medium border border-emerald-500/10 flex items-center gap-1.5">
                           <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
                           <span>Guarantees absolute workflow mastery and fast execution loops.</span>
                         </div>
@@ -1499,7 +1499,7 @@ export default function App() {
                           </ul>
                         </div>
 
-                        <div className="p-3 bg-rose-500/10 text-rose-900 rounded-xl text-[11px] font-medium border border-rose-500/10 flex items-center gap-1.5">
+                        <div className="p-3 bg-rose-500/10 text-rose-900 rounded-xl text-xs font-semibold font-medium border border-rose-500/10 flex items-center gap-1.5">
                           <AlertCircle className="w-4 h-4 text-rose-600 shrink-0" />
                           <span>We heavily advise against purchasing; save your capital for D2C tools.</span>
                         </div>
@@ -1517,7 +1517,7 @@ export default function App() {
                       <h4 className="text-base font-bold text-slate-900 mt-2 font-sans">
                         📖 The Use-Case Scenario Proof Library
                       </h4>
-                      <p className="text-xs text-slate-500 font-light mt-1 font-sans">
+                      <p className="text-xs text-slate-300 font-light mt-1 font-sans">
                         Turn theoretical theories into concrete math. Present high-spending buyers with side-by-side Before vs. After operational case narratives detailing how leaks are plugged in real-time.
                       </p>
                     </div>
@@ -1531,7 +1531,7 @@ export default function App() {
                             <span className="text-[9px] font-mono tracking-wider px-2 py-0.5 rounded border font-semibold bg-indigo-50 text-indigo-700 border-indigo-100 uppercase">
                               SCENARIO A &bull; DESIGN OS
                             </span>
-                            <span className="text-[10px] text-rose-500 font-mono font-bold">Weekend Leak Decay</span>
+                            <span className="text-xs font-semibold tracking-wider text-rose-500 font-mono font-bold">Weekend Leak Decay</span>
                           </div>
                           
                           <div>
@@ -1564,7 +1564,7 @@ export default function App() {
                           </div>
                         </div>
 
-                        <div className="pt-3.5 border-t border-slate-100 text-[10px] font-mono text-slate-450">
+                        <div className="pt-3.5 border-t border-slate-100 text-xs font-semibold tracking-wider font-mono text-slate-450">
                           Metric: Outbound Response Time Reduced 99.4%
                         </div>
                       </div>
@@ -1576,7 +1576,7 @@ export default function App() {
                             <span className="text-[9px] font-mono tracking-wider px-2 py-0.5 rounded border font-semibold bg-indigo-50 text-indigo-700 border-indigo-100 uppercase">
                               SCENARIO B &bull; PAID GROWTH
                             </span>
-                            <span className="text-[10px] text-rose-500 font-mono font-bold">Untracked Ad Attribution</span>
+                            <span className="text-xs font-semibold tracking-wider text-rose-500 font-mono font-bold">Untracked Ad Attribution</span>
                           </div>
                           
                           <div>
@@ -1609,7 +1609,7 @@ export default function App() {
                           </div>
                         </div>
 
-                        <div className="pt-3.5 border-t border-slate-100 text-[10px] font-mono text-slate-450">
+                        <div className="pt-3.5 border-t border-slate-100 text-xs font-semibold tracking-wider font-mono text-slate-450">
                           Metric: Zero lost tracking UTM parameters
                         </div>
                       </div>
@@ -1621,7 +1621,7 @@ export default function App() {
                             <span className="text-[9px] font-mono tracking-wider px-2 py-0.5 rounded border font-semibold bg-indigo-50 text-indigo-700 border-indigo-100 uppercase">
                               SCENARIO C &bull; OUTBOUND OS
                             </span>
-                            <span className="text-[10px] text-rose-500 font-mono font-bold">Rep Cannibalization</span>
+                            <span className="text-xs font-semibold tracking-wider text-rose-500 font-mono font-bold">Rep Cannibalization</span>
                           </div>
                           
                           <div>
@@ -1654,7 +1654,7 @@ export default function App() {
                           </div>
                         </div>
 
-                        <div className="pt-3.5 border-t border-slate-100 text-[10px] font-mono text-slate-450">
+                        <div className="pt-3.5 border-t border-slate-100 text-xs font-semibold tracking-wider font-mono text-slate-450">
                           Metric: Rep double-touch overlap eliminated 100%
                         </div>
                       </div>
@@ -1671,7 +1671,7 @@ export default function App() {
                       <h4 className="text-base font-bold text-slate-900 mt-2">
                         ⚖️ Interactive Profit Leak Math & Risk Reversal
                       </h4>
-                      <p className="text-xs text-slate-500 font-light mt-1">
+                      <p className="text-xs text-slate-300 font-light mt-1">
                         Show agency founders the absolute cost of delay. Save a single lead or two executive hours, and the complete template investment of {pricePoint || "$350"} is recovered 10x over.
                       </p>
                     </div>
@@ -1693,7 +1693,7 @@ export default function App() {
                             This asset is a tax-deductible operational expense that builds a structured moat around your agency's pipeline. No recurring software fees, no experimental HR overhead, and completely standard-operating-procedure compliant.
                           </p>
                           
-                          <div className="p-3 bg-amber-50 border border-amber-150 rounded-lg text-[11px] text-amber-850">
+                          <div className="p-3 bg-amber-50 border border-amber-150 rounded-lg text-xs font-semibold text-amber-850">
                             <strong>🎯 Hot Pitch Copy:</strong> Use the live calculated leakage metrics values to back up sales messages and close boutique owners with absolute cold authority.
                           </div>
                         </div>
@@ -1727,17 +1727,17 @@ export default function App() {
                         
                         <div>
                           <div className="flex justify-between items-center pb-3 border-b border-slate-100 mb-4">
-                            <span className="text-xs font-mono font-bold text-slate-500 uppercase tracking-widest flex items-center gap-1">
+                            <span className="text-xs font-mono font-bold text-slate-300 uppercase tracking-widest flex items-center gap-1">
                               <Sliders className="w-3.5 h-3.5 text-indigo-500" />
                               Interactive Profit Leak Calculator
                             </span>
-                            <span className="text-[10px] text-slate-400 font-mono">Dynamic Values</span>
+                            <span className="text-xs font-semibold tracking-wider text-slate-400 font-mono">Dynamic Values</span>
                           </div>
 
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-sans">
                             {/* ACV Input */}
                             <div className="space-y-1.5 text-left">
-                              <label className="text-[11px] font-bold text-slate-700 uppercase font-mono block">
+                              <label className="text-sm font-semibold font-bold text-slate-700 uppercase font-mono block">
                                 Average Retainer Value (ACV)
                               </label>
                               <div className="flex items-center gap-2">
@@ -1758,7 +1758,7 @@ export default function App() {
 
                             {/* Lost Leads Input */}
                             <div className="space-y-1.5 text-left">
-                              <label className="text-[11px] font-bold text-slate-700 uppercase font-mono block">
+                              <label className="text-sm font-semibold font-bold text-slate-700 uppercase font-mono block">
                                 Lost Leads / Month (By delay)
                               </label>
                               <div className="flex items-center gap-2">
@@ -1779,7 +1779,7 @@ export default function App() {
 
                             {/* Founder hourly rate */}
                             <div className="space-y-1.5 text-left">
-                              <label className="text-[11px] font-bold text-slate-700 uppercase font-mono block">
+                              <label className="text-sm font-semibold font-bold text-slate-700 uppercase font-mono block">
                                 Founder Hourly Value ($/hr)
                               </label>
                               <div className="flex items-center gap-2">
@@ -1800,7 +1800,7 @@ export default function App() {
 
                             {/* Manual hours saved */}
                             <div className="space-y-1.5 text-left">
-                              <label className="text-[11px] font-bold text-slate-700 uppercase font-mono block">
+                              <label className="text-sm font-semibold font-bold text-slate-700 uppercase font-mono block">
                                 Weekly Manual Admin Hours
                               </label>
                               <div className="flex items-center gap-2">
@@ -1865,7 +1865,7 @@ export default function App() {
 
                         {/* Dynamic Payback Ratio Gauge Banner */}
                         <div className="mt-4 p-3 bg-slate-900 leading-normal rounded-xl border border-slate-950 text-slate-100">
-                          <div className="flex justify-between items-center text-[11px] font-mono">
+                          <div className="flex justify-between items-center text-xs font-semibold font-mono">
                             <div className="flex items-center gap-1">
                               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping inline-block shrink-0" />
                               <span>Dynamic System Return Ratio:</span>
@@ -1879,7 +1879,7 @@ export default function App() {
                               ).toLocaleString()}% First-Month ROI
                             </span>
                           </div>
-                          <p className="text-[10px] text-slate-400 font-light text-left mt-1.5 font-sans leading-relaxed">
+                          <p className="text-xs font-semibold tracking-wider text-slate-400 font-light text-left mt-1.5 font-sans leading-relaxed">
                             Based on your custom rates: Rescuing just 20% of your current response-delay leads (${(roiLostLeads * roiRetainerValue * 0.20).toLocaleString()}) and reclaiming your admin hours saves <strong>${Math.round((roiLostLeads * roiRetainerValue * 0.20) + (roiAdminHours * 4.33 * roiFounderRate)).toLocaleString()}/month</strong>, meaning the template pays for itself in less than <strong>{Math.max(1, Math.round(350 / (Math.max(100, (roiLostLeads * roiRetainerValue * 0.20) + (roiAdminHours * 4.33 * roiFounderRate)) / 30)))} days</strong>!
                           </p>
                         </div>
@@ -1903,7 +1903,7 @@ export default function App() {
                           <h4 className="text-lg md:text-xl font-bold text-white font-sans flex items-center gap-2">
                             <span>📊 Feature Spotlight: The Performance Analytics Deep Hook</span>
                           </h4>
-                          <p className="text-xs text-slate-400 font-light font-sans max-w-3xl">
+                          <p className="text-base text-zinc-200 leading-relaxed font-light font-sans max-w-3xl">
                             Expose operational bleeding in cold B2B campaigns to make the <strong className="text-slate-205">{pricePoint || "$350"} template</strong> an irresistible bargain. This conversion-optimized storefront copy illustrates how the new dashboard saves agency founders from "flying blind" and exposes which exact sales reps are letting hot inbound leads decay.
                           </p>
                         </div>
@@ -1933,20 +1933,20 @@ export default function App() {
                       {/* Copier Interface Container */}
                       <div className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden text-left">
                         {/* Header mimic */}
-                        <div className="flex justify-between items-center bg-slate-950/80 px-4 py-2.5 border-b border-slate-800/80 font-mono text-[10px] text-slate-450">
+                        <div className="flex justify-between items-center bg-slate-950/80 px-4 py-2.5 border-b border-slate-800/80 font-mono text-xs font-semibold tracking-wider text-slate-450">
                           <span className="flex items-center gap-1.5">
                             <span className="w-2 h-2 rounded-full bg-rose-500 inline-block" />
                             <span className="w-2 h-2 rounded-full bg-amber-500 inline-block" />
                             <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" />
                             <span className="ml-1 text-slate-300">gumroad_sales_page_pitch_matrix.html</span>
                           </span>
-                          <span className="text-slate-500 font-mono uppercase">Sales Copy Block</span>
+                          <span className="text-slate-300 font-mono uppercase">Sales Copy Block</span>
                         </div>
 
                         {/* Copy block visual preview */}
                         <div className="p-5 space-y-4 font-sans text-xs text-slate-300 leading-relaxed border-b border-slate-800">
                           <div>
-                            <span className="text-[10px] text-indigo-400 font-mono uppercase font-black tracking-widest block mb-1">
+                            <span className="text-xs font-semibold tracking-wider text-indigo-400 font-mono uppercase font-black tracking-widest block mb-1">
                               [LAUNCHHEAD PITCH LINE]
                             </span>
                             <h5 className="text-base font-extrabold text-white leading-snug">
@@ -1964,7 +1964,7 @@ export default function App() {
 
                           <div className="bg-slate-950 border border-slate-850 p-4 rounded-xl space-y-2">
                             <span className="text-[9px] font-mono text-emerald-400 font-bold block uppercase leading-none">🔥 EXPOSING THE HIDDEN DECAY BOTTLENECK:</span>
-                            <p className="text-[11px] text-slate-400 font-light leading-relaxed">
+                            <p className="text-xs font-semibold text-slate-400 font-light leading-relaxed">
                               You spend $5,000 to launch outbound campaigns and complain to the SDR team that "outbound leads are garbage" – when the truth is your response decay is burning your cash. If a lead waits over 4 hours, close rates drop by 80%. But because you don't have the metrics, your reps can hide behind subjective reports.
                             </p>
                           </div>
@@ -1980,7 +1980,7 @@ export default function App() {
                             <span className="text-[10.5px] font-mono text-indigo-400 font-black uppercase flex items-center gap-1.5">
                               <Sliders className="w-3.5 h-3.5 text-indigo-400" /> Interactive Blind-Founder Leak Estimator
                             </span>
-                            <span className="text-[10px] text-slate-500 font-mono">Demos on-page lead-decay calculations</span>
+                            <span className="text-xs font-semibold tracking-wider text-slate-300 font-mono">Demos on-page lead-decay calculations</span>
                           </div>
                           
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -1998,11 +1998,11 @@ export default function App() {
                                   onChange={(e) => setRoiLostLeads(Math.max(1, Math.round(Number(e.target.value) / 10)))}
                                   className="w-full h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-indigo-500"
                                 />
-                                <span className="font-mono text-white text-[11px] bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0 w-12 text-center">
+                                <span className="font-mono text-white text-xs font-semibold bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0 w-12 text-center">
                                   {roiLostLeads * 10}
                                 </span>
                               </div>
-                              <p className="text-[9.5px] text-slate-500 font-light">
+                              <p className="text-[9.5px] text-slate-300 font-light">
                                 Total prospects distributed to your active reps.
                               </p>
                             </div>
@@ -2021,11 +2021,11 @@ export default function App() {
                                   onChange={(e) => setRoiRetainerValue(Number(e.target.value))}
                                   className="w-full h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-indigo-500"
                                 />
-                                <span className="font-mono text-white text-[11px] bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0 w-16 text-center">
+                                <span className="font-mono text-white text-xs font-semibold bg-slate-900 px-2 py-0.5 rounded border border-slate-800 shrink-0 w-16 text-center">
                                   ${roiRetainerValue.toLocaleString()}
                                 </span>
                               </div>
-                              <p className="text-[9.5px] text-slate-500 font-light">
+                              <p className="text-[9.5px] text-slate-300 font-light">
                                 Typical client contract volume value.
                               </p>
                             </div>
@@ -2066,7 +2066,7 @@ export default function App() {
                   {/* High Ticket Value Statement */}
                   <div className="bg-sky-50 border border-sky-100 rounded-xl p-5 shadow-xs">
                     <div className="flex justify-between items-center mb-3">
-                      <span className="text-[10px] font-mono font-bold uppercase text-sky-700 tracking-wider">
+                      <span className="text-xs font-semibold tracking-wider font-mono font-bold uppercase text-sky-700 tracking-wider">
                         10x Upsell Bridge Method
                       </span>
                       <span className="text-sm font-mono font-bold text-sky-800">
@@ -2095,7 +2095,7 @@ export default function App() {
                           <h4 className="text-base font-bold text-white font-sans flex items-center gap-2">
                             <span>💼 The $3,500+ Retainer Upsell Script: Command Center Consultation</span>
                           </h4>
-                          <p className="text-xs text-slate-400 font-light max-w-3xl">
+                          <p className="text-base text-zinc-200 leading-relaxed font-light max-w-3xl">
                             Position yourself as an enterprise RevOps architect. Use this interactive pitch script to move buyers of the <strong className="text-slate-200">{pricePoint || "$350"} template</strong> onto a custom <strong className="text-slate-205">{upsellPricePoint || "$3,500"}+ implementation retainer</strong> by proposing a unified financial command center integrating QuickBooks, Stripe, and performance analytics.
                           </p>
                         </div>
@@ -2111,7 +2111,7 @@ export default function App() {
                             ];
                             handleCopyText(steps[upsellScriptStep], `upsell-script-step-${upsellScriptStep}`);
                           }}
-                          className="text-[10px] bg-indigo-600 hover:bg-indigo-500 text-white font-mono px-3 py-1.5 rounded-lg border border-indigo-500 hover:shadow-sm cursor-pointer flex items-center gap-1.5 transition select-none self-start shrink-0"
+                          className="text-xs font-semibold tracking-wider bg-indigo-600 hover:bg-indigo-500 text-white font-mono px-3 py-1.5 rounded-lg border border-indigo-500 hover:shadow-sm cursor-pointer flex items-center gap-1.5 transition select-none self-start shrink-0"
                         >
                           {copiedState === `upsell-script-step-${upsellScriptStep}` ? (
                             <>
@@ -2152,11 +2152,11 @@ export default function App() {
 
                       {/* Teleprompter Display Console */}
                       <div className="bg-slate-950 rounded-xl border border-slate-850 p-4.5 space-y-4">
-                        <div className="flex justify-between items-center text-[10px] font-mono border-b border-indigo-950 pb-2">
+                        <div className="flex justify-between items-center text-xs font-semibold tracking-wider font-mono border-b border-indigo-950 pb-2">
                           <span className="text-indigo-400 font-black uppercase tracking-wider flex items-center gap-1.5">
                             <Cpu className="w-3.5 h-3.5 text-indigo-400 animate-pulse" /> Teleprompter Section: Stage 0{upsellScriptStep + 1}
                           </span>
-                          <span className="text-slate-500">TARGET: Boutique Agency Owner ($50k-$250k/mo)</span>
+                          <span className="text-slate-300">TARGET: Boutique Agency Owner ($50k-$250k/mo)</span>
                         </div>
 
                         {/* Speech script preview text */}
@@ -2165,7 +2165,7 @@ export default function App() {
                             <span className="text-[9px] font-mono text-indigo-400 font-bold tracking-widest block uppercase mb-1">
                               🎯 CORE PITCH STRATEGY & GOAL:
                             </span>
-                            <p className="text-[11px] text-slate-300 font-light leading-relaxed font-sans">
+                            <p className="text-xs font-semibold text-slate-300 font-light leading-relaxed font-sans">
                               {upsellScriptStep === 0 && "Subvert the \"freelance developer\" dynamic by positioning your team as strategic financial scaling architects. Request visual access to audited systems."}
                               {upsellScriptStep === 1 && "Expose the severe leak of CRM response delay times. Frame subjective performance metrics into absolute math to establish complete trust."}
                               {upsellScriptStep === 2 && "Detail the beautiful, automated unification of CRM pipelines with Stripe and QuickBooks cash ledger webhooks directly."}
@@ -2202,7 +2202,7 @@ export default function App() {
                             </p>
                           </div>
 
-                          <div className="bg-slate-900/45 p-3 rounded-lg border border-slate-850 text-[11px] space-y-1">
+                          <div className="bg-slate-900/45 p-3 rounded-lg border border-slate-850 text-xs font-semibold space-y-1">
                             <span className="text-[9px] font-mono text-indigo-400 font-bold block uppercase">🛡️ PRE-EMPTIVE OBJECTION ANCHOR COUNTER:</span>
                             <div className="text-slate-400 font-light font-sans">
                               {upsellScriptStep === 0 && (
@@ -2255,7 +2255,7 @@ export default function App() {
                         </h5>
                         <ul className="space-y-2">
                           {currentBlueprint.highTicketUpsellStrategy.customDeliverablesList.map((item, idx) => (
-                            <li key={idx} className="text-xs text-slate-500 leading-relaxed flex items-start gap-1.5">
+                            <li key={idx} className="text-xs text-slate-300 leading-relaxed flex items-start gap-1.5">
                               <span className="text-indigo-500 font-bold shrink-0">&bull;</span>
                               <span>{item}</span>
                             </li>
@@ -2269,7 +2269,7 @@ export default function App() {
                         </h5>
                         <ul className="space-y-2">
                           {currentBlueprint.highTicketUpsellStrategy.integrationsRecommended.map((item, idx) => (
-                            <li key={idx} className="text-xs text-slate-500 leading-relaxed flex items-start gap-1.5">
+                            <li key={idx} className="text-xs text-slate-300 leading-relaxed flex items-start gap-1.5">
                               <span className="text-emerald-500 font-bold shrink-0">&bull;</span>
                               <span>{item}</span>
                             </li>
@@ -2283,7 +2283,7 @@ export default function App() {
                       <h5 className="text-xs font-bold text-slate-900 mb-2 flex items-center gap-1.5">
                         <Users className="w-4 h-4 text-slate-600" /> Staff Onboarding & Operational Alignment Plan
                       </h5>
-                      <p className="text-xs text-slate-500 leading-relaxed font-light">
+                      <p className="text-xs text-slate-300 leading-relaxed font-light">
                         {currentBlueprint.highTicketUpsellStrategy.privateOnboardingAndTrainingPlan}
                       </p>
                     </div>
@@ -2326,7 +2326,7 @@ export default function App() {
                         <h3 className="text-sm font-black text-white mt-1 font-sans flex items-center gap-2">
                           🤖 B2B RevOps & Sales Triage Assistant
                         </h3>
-                        <p className="text-[10px] text-slate-400 font-light mt-0.5">
+                        <p className="text-xs font-semibold tracking-wider text-slate-400 font-light mt-0.5">
                           Silicon Valley-grade operational copilot designed to analyze databases & draft high-velocity outreach response packages.
                         </p>
                       </div>
@@ -2366,7 +2366,7 @@ export default function App() {
                               <span className="truncate">3. Amira K.</span>
                               <span className="text-[7px] bg-slate-700 text-white px-0.5 font-sans rounded">78</span>
                             </div>
-                            <div className="text-slate-500 text-[7px] mt-0.5">🟢 SDR Sean Assigned</div>
+                            <div className="text-slate-300 text-[7px] mt-0.5">🟢 SDR Sean Assigned</div>
                           </div>
 
                           <div className="p-1 px-1.5 bg-slate-850 border border-slate-800 rounded-md">
@@ -2374,7 +2374,7 @@ export default function App() {
                               <span className="truncate">4. Danny D.</span>
                               <span className="text-[7px] bg-slate-750 text-white px-0.5 font-sans rounded">40</span>
                             </div>
-                            <div className="text-slate-500 text-[7px] mt-0.5">🟢 Safe Outbound (1.2h)</div>
+                            <div className="text-slate-300 text-[7px] mt-0.5">🟢 Safe Outbound (1.2h)</div>
                           </div>
                         </div>
                       </div>
@@ -2386,7 +2386,7 @@ export default function App() {
                             key={mIdx} 
                             className={`flex flex-col ${msg.sender === "user" ? "items-end" : "items-start"}`}
                           >
-                            <div className="flex items-center gap-1.5 mb-1 text-[8px] font-mono text-slate-500">
+                            <div className="flex items-center gap-1.5 mb-1 text-[8px] font-mono text-slate-300">
                               <span>{msg.timestamp}</span>
                               <span className={`font-bold uppercase ${msg.sender === "user" ? "text-indigo-400" : "text-emerald-400"}`}>
                                 {msg.sender === "user" ? "SDR Executive" : "AcquisitionOS AI"}
@@ -2396,7 +2396,7 @@ export default function App() {
                               className={`text-xs p-3 rounded-lg max-w-[95%] whitespace-pre-wrap leading-relaxed ${
                                 msg.sender === "user" 
                                   ? "bg-indigo-600 text-white border border-indigo-700 font-medium font-sans" 
-                                  : "bg-slate-900 border border-slate-800 text-slate-200 font-mono text-[11px]"
+                                  : "bg-slate-900 border border-slate-800 text-slate-200 font-mono text-xs font-semibold"
                               }`}
                             >
                               {msg.text}
@@ -2465,7 +2465,7 @@ export default function App() {
                         <button
                           type="submit"
                           disabled={isCopilotLoading}
-                          className="bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 text-white p-2.5 rounded-xl transition-all flex items-center justify-center font-mono text-xs font-bold"
+                          className="bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 text-white p-2.5 rounded-xl transition-all flex items-center justify-center font-mono text-base font-semibold min-h-[44px] font-bold"
                         >
                           <Send className="w-3.5 h-3.5" />
                         </button>
@@ -2477,7 +2477,7 @@ export default function App() {
                       
                       <div className="p-1 px-3 bg-slate-100 border border-slate-200 rounded-xl text-left">
                         <h4 className="text-xs font-bold text-slate-900 mt-1">📋 Outbound Sequence Templates</h4>
-                        <p className="text-[10px] text-slate-500 leading-tight font-light mb-1">
+                        <p className="text-xs font-semibold tracking-wider text-slate-300 leading-tight font-light mb-1">
                           Copywriting structures generated for your {pricePoint || "$350"} client asset stack.
                         </p>
                       </div>
@@ -2496,11 +2496,11 @@ export default function App() {
                           )}
                         </button>
                         
-                        <span className="text-[9px] font-mono text-slate-500 px-2 py-0.5 rounded bg-slate-100 border border-slate-200 uppercase font-black tracking-wider">
+                        <span className="text-[9px] font-mono text-slate-300 px-2 py-0.5 rounded bg-slate-100 border border-slate-200 uppercase font-black tracking-wider">
                           LinkedIn Conversational Touchpoint
                         </span>
 
-                        <p className="text-[11px] text-slate-600 mt-3 leading-relaxed pr-6 whitespace-pre-wrap font-sans">
+                        <p className="text-xs font-semibold text-slate-600 mt-3 leading-relaxed pr-6 whitespace-pre-wrap font-sans">
                           {currentBlueprint.outreachTemplates.linkedinOutreach}
                         </p>
                       </div>
@@ -2523,7 +2523,7 @@ export default function App() {
                           Outbound Sequence Email #1 &mdash; Problem Pitch
                         </span>
 
-                        <p className="text-[10px] text-slate-600 mt-3 leading-relaxed pr-6 whitespace-pre-wrap font-mono">
+                        <p className="text-xs font-semibold tracking-wider text-slate-600 mt-3 leading-relaxed pr-6 whitespace-pre-wrap font-mono">
                           {currentBlueprint.outreachTemplates.emailSequence1}
                         </p>
                       </div>
@@ -2546,7 +2546,7 @@ export default function App() {
                           Outbound Sequence Email #2 &mdash; Authority Walkthrough
                         </span>
 
-                        <p className="text-[10px] text-slate-600 mt-3 leading-relaxed pr-6 whitespace-pre-wrap font-mono">
+                        <p className="text-xs font-semibold tracking-wider text-slate-600 mt-3 leading-relaxed pr-6 whitespace-pre-wrap font-mono">
                           {currentBlueprint.outreachTemplates.emailSequence2}
                         </p>
                       </div>
@@ -2566,13 +2566,13 @@ export default function App() {
                   <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-xs">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-slate-100 pb-4 mb-6 gap-4">
                       <div>
-                        <span className="text-[10px] font-mono text-indigo-500 px-2 py-0.5 rounded bg-indigo-50 border border-indigo-100 font-bold uppercase tracking-wider">
+                        <span className="text-xs font-semibold tracking-wider font-mono text-indigo-500 px-2 py-0.5 rounded bg-indigo-50 border border-indigo-100 font-bold uppercase tracking-wider">
                           Interactive Simulator
                         </span>
                         <h3 className="text-lg font-bold text-slate-900 mt-2">
                           🚦 Lead Health & SLA Priority Calculator
                         </h3>
-                        <p className="text-xs text-slate-500 mt-0.5">
+                        <p className="text-xs text-slate-300 mt-0.5">
                           Test how the Airtable formula rates incoming prospects based on enrichment attributes and response speed.
                         </p>
                       </div>
@@ -2588,7 +2588,7 @@ export default function App() {
                           <span className="text-[9px] text-slate-400 absolute bottom-1.5 font-mono">/100</span>
                         </div>
                         <div>
-                          <span className="text-[10px] font-mono font-bold uppercase text-slate-400 block tracking-wider">Computed Rating</span>
+                          <span className="text-xs font-semibold tracking-wider font-mono font-bold uppercase text-slate-400 block tracking-wider">Computed Rating</span>
                           <span className={`text-xs font-bold px-2 py-0.5 rounded inline-block mt-0.5 ${
                             (() => {
                               const score = Math.min(100, Math.max(0, 
@@ -2622,7 +2622,7 @@ export default function App() {
                       {/* Input variables */}
                       <div className="space-y-4">
                         <div>
-                          <label className="block text-[11px] font-mono uppercase font-bold text-slate-500 mb-1.5">
+                          <label className="block text-sm font-semibold font-mono uppercase font-bold text-slate-300 mb-1.5">
                             Company Size Parameter (Headcount)
                           </label>
                           <div className="grid grid-cols-2 gap-2">
@@ -2649,7 +2649,7 @@ export default function App() {
                         </div>
 
                         <div>
-                          <label className="block text-[11px] font-mono uppercase font-bold text-slate-500 mb-1.5">
+                          <label className="block text-sm font-semibold font-mono uppercase font-bold text-slate-300 mb-1.5">
                             Technographic Relevance Matching
                           </label>
                           <div className="flex flex-col gap-2">
@@ -2669,7 +2669,7 @@ export default function App() {
                                 }`}
                               >
                                 <div className="font-bold">{opt.label}</div>
-                                <div className={`text-[10px] ${simTechStack === opt.val ? "text-slate-300" : "text-slate-500"} mt-0.5`}>{opt.desc}</div>
+                                <div className={`text-xs font-semibold tracking-wider ${simTechStack === opt.val ? "text-slate-300" : "text-slate-300"} mt-0.5`}>{opt.desc}</div>
                               </button>
                             ))}
                           </div>
@@ -2677,7 +2677,7 @@ export default function App() {
 
                         <div>
                           <div className="flex justify-between items-center mb-1.5">
-                            <label className="block text-[11px] font-mono uppercase font-bold text-slate-500">
+                            <label className="block text-sm font-semibold font-mono uppercase font-bold text-slate-300">
                               SLA Hours Elapsed Since Submission
                             </label>
                             <span className="text-xs font-mono font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded">
@@ -2693,7 +2693,7 @@ export default function App() {
                             onChange={(e) => setSimResponseHours(parseInt(e.target.value))}
                             className="w-full accent-indigo-600 h-2 bg-slate-100 rounded-lg cursor-pointer"
                           />
-                          <div className="flex justify-between text-[10px] text-slate-450 font-mono mt-1">
+                          <div className="flex justify-between text-xs font-semibold tracking-wider text-slate-450 font-mono mt-1">
                             <span>0h (Instant Submission)</span>
                             <span>4h (SLA window)</span>
                             <span>24h (Sale threshold)</span>
@@ -2723,20 +2723,20 @@ export default function App() {
                           </p>
 
                           <div className="mt-5 pt-4 border-t border-slate-200">
-                            <span className="text-[10px] font-mono text-slate-400 uppercase tracking-widest block font-bold mb-1">
+                            <span className="text-xs font-semibold tracking-wider font-mono text-slate-400 uppercase tracking-widest block font-bold mb-1">
                               Simulated Real-time Point Weights:
                             </span>
                             <ul className="text-xs space-y-2 mt-2">
                               <li className="flex justify-between p-1.5 rounded bg-white">
-                                <span className="text-slate-500">Employee Range Weight ({simCompanySize}):</span>
+                                <span className="text-slate-300">Employee Range Weight ({simCompanySize}):</span>
                                 <span className="font-mono font-bold text-slate-950">+{simCompanySize === "1-10" ? 10 : simCompanySize === "11-50" ? 25 : simCompanySize === "51-200" ? 50 : 30} pts</span>
                               </li>
                               <li className="flex justify-between p-1.5 rounded bg-white">
-                                <span className="text-slate-500">Technology Match Relevance:</span>
+                                <span className="text-slate-300">Technology Match Relevance:</span>
                                 <span className="font-mono font-bold text-slate-950">+{simTechStack === "complete-match" ? 30 : simTechStack === "partial-match" ? 15 : 0} pts</span>
                               </li>
                               <li className="flex justify-between p-1.5 rounded bg-white">
-                                <span className="text-slate-500">SLA Response Velocity Value:</span>
+                                <span className="text-slate-300">SLA Response Velocity Value:</span>
                                 <span className="font-mono font-bold text-slate-950">
                                   {simResponseHours < 1 ? "+20" : simResponseHours <= 4 ? "+10" : simResponseHours > 24 ? "-15" : "0"} pts
                                 </span>
@@ -2746,10 +2746,10 @@ export default function App() {
                         </div>
 
                         <div className="mt-6 pt-4 border-t border-slate-200 relative">
-                          <span className="text-[10px] font-mono text-indigo-600 font-bold uppercase tracking-wider block mb-2">
+                          <span className="text-xs font-semibold tracking-wider font-mono text-indigo-600 font-bold uppercase tracking-wider block mb-2">
                             Master Airtable Formula Code
                           </span>
-                          <div className="bg-slate-950 text-indigo-400 p-3 rounded-lg text-[10px] font-mono leading-relaxed overflow-x-auto select-all max-h-36 relative whitespace-pre scrollbar-thin">
+                          <div className="bg-slate-950 text-indigo-400 p-3 rounded-lg text-xs font-semibold tracking-wider font-mono leading-relaxed overflow-x-auto select-all max-h-36 relative whitespace-pre scrollbar-thin">
 {`IF(
   AND({Lead Status} = "Prospect", {Contacted} = FALSE),
   MIN(100, MAX(0,
@@ -2782,14 +2782,14 @@ export default function App() {
                     <h3 className="text-xs font-mono font-bold text-slate-400 uppercase tracking-widest mb-4">
                       🗄️ Primary 'Prospects/Leads' Database Fields Definition
                     </h3>
-                    <p className="text-xs text-slate-500 mb-4 leading-relaxed">
+                    <p className="text-xs text-slate-300 mb-4 leading-relaxed">
                       This single highly structured clearinghouse table handles automated data validation, webhook parsing, dynamic scoring, and rep task triggers. Use these exact structures inside your Airtable setup:
                     </p>
 
                     <div className="overflow-x-auto">
                       <table className="w-full text-left text-xs border-collapse">
                         <thead>
-                          <tr className="border-b border-slate-100 bg-slate-50 text-slate-500 font-mono text-[10px] uppercase font-bold">
+                          <tr className="border-b border-slate-100 bg-slate-50 text-slate-300 font-mono text-xs font-semibold tracking-wider uppercase font-bold">
                             <th className="p-3">Field Name</th>
                             <th className="p-3">Airtable Type</th>
                             <th className="p-3">Description & Blueprint Formulas</th>
@@ -2818,14 +2818,14 @@ export default function App() {
                                 {field.name}
                               </td>
                               <td className="p-3 border-r border-slate-50/50">
-                                <span className="px-2 py-0.5 rounded bg-slate-150 text-slate-650 font-mono text-[10px]">
+                                <span className="px-2 py-0.5 rounded bg-slate-150 text-slate-650 font-mono text-xs font-semibold tracking-wider">
                                   {field.type}
                                 </span>
                               </td>
                               <td className="p-3 border-r border-slate-50/50 text-slate-600 font-light max-w-sm whitespace-normal">
                                 {field.desc}
                               </td>
-                              <td className="p-3 font-mono text-[10px] text-slate-550">
+                              <td className="p-3 font-mono text-xs font-semibold tracking-wider text-slate-550">
                                 {field.source}
                               </td>
                             </tr>
@@ -2840,7 +2840,7 @@ export default function App() {
                     <h3 className="text-xs font-mono font-bold text-slate-400 uppercase tracking-widest mb-4">
                       📶 High-Value Pre-configured Database Views
                     </h3>
-                    <p className="text-xs text-slate-500 mb-5 leading-relaxed">
+                    <p className="text-xs text-slate-300 mb-5 leading-relaxed">
                       To make a $350 Airtable template look and execute like premium B2B software, you must guide your buyers to structure these specific pre-saved views inside their Airtable space:
                     </p>
 
@@ -2872,12 +2872,12 @@ export default function App() {
                             <h4 className="text-xs font-bold text-slate-900 flex items-center gap-1">
                               {view.title}
                             </h4>
-                            <p className="text-[11px] text-slate-500 mt-2 leading-relaxed font-light">
+                            <p className="text-xs font-semibold text-slate-300 mt-2 leading-relaxed font-light">
                               {view.description}
                             </p>
                           </div>
                           
-                          <div className="mt-4 pt-3 border-t border-dashed border-slate-200 flex items-center justify-between text-[10px] font-mono">
+                          <div className="mt-4 pt-3 border-t border-dashed border-slate-200 flex items-center justify-between text-xs font-semibold tracking-wider font-mono">
                             <span className="text-slate-400 font-light">View Config Rule:</span>
                             <span className="text-indigo-600 font-semibold">{view.rule}</span>
                           </div>
@@ -2889,13 +2889,13 @@ export default function App() {
                   {/* Section 4: Interactive Relational Schema Explorer */}
                   <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-xs space-y-6">
                     <div className="border-b border-slate-100 pb-4">
-                      <span className="text-[10px] font-mono text-purple-650 bg-purple-50 px-2.5 py-1 rounded border border-purple-150 font-bold uppercase tracking-wider">
+                      <span className="text-xs font-semibold tracking-wider font-mono text-purple-650 bg-purple-50 px-2.5 py-1 rounded border border-purple-150 font-bold uppercase tracking-wider">
                         Relational Database Architecture
                       </span>
                       <h3 className="text-lg font-bold text-slate-900 mt-2">
                         🔗 Supporting Tables & Cross-Link Schema
                       </h3>
-                      <p className="text-xs text-slate-500 mt-0.5">
+                      <p className="text-xs text-slate-300 mt-0.5">
                         A raw B2B lead list is a commodity. A connected CRM ecosystem tracking interactions, SDR velocity, and revenue attribution is a $350 operational engine.
                       </p>
                     </div>
@@ -2914,7 +2914,7 @@ export default function App() {
                           className={`px-4 py-2 hover:scale-[1.01] active:scale-[0.99] text-xs font-mono font-bold border rounded-lg transition-all whitespace-nowrap ${
                             activeRelationalDetail === tbl.id
                               ? `${tbl.color} border-2`
-                              : "border-slate-200 text-slate-500 hover:text-slate-800 hover:bg-slate-50"
+                              : "border-slate-200 text-slate-300 hover:text-slate-800 hover:bg-slate-50"
                           }`}
                         >
                           {tbl.label}
@@ -2949,9 +2949,9 @@ export default function App() {
                               <span className="text-[9px] font-mono text-indigo-400 font-bold uppercase tracking-wider block">Avg Speed-To-Lead</span>
                               <div className="flex items-baseline gap-2 mt-2">
                                 <span className="text-2xl font-black text-white font-sans tracking-tight">14.2 Mins</span>
-                                <span className="text-[10px] text-emerald-400 font-mono font-bold"> Slashed 88%</span>
+                                <span className="text-xs font-semibold tracking-wider text-emerald-400 font-mono font-bold"> Slashed 88%</span>
                               </div>
-                              <p className="text-[10px] text-slate-400 font-light mt-1.5">Target Response Window: &lt; 240 mins (4 hours)</p>
+                              <p className="text-xs font-semibold tracking-wider text-slate-400 font-light mt-1.5">Target Response Window: &lt; 240 mins (4 hours)</p>
                               <div className="absolute top-4 right-4 text-slate-700 group-hover:text-indigo-400 transition-colors">
                                 <Clock className="w-4 h-4" />
                               </div>
@@ -2962,9 +2962,9 @@ export default function App() {
                               <span className="text-[9px] font-mono text-indigo-400 font-bold uppercase tracking-wider block">SLA Compliance Rate</span>
                               <div className="flex items-baseline gap-2 mt-2">
                                 <span className="text-2xl font-black text-white font-sans tracking-tight">96.4%</span>
-                                <span className="text-[10px] text-emerald-400 font-mono font-bold">▲ Target Meta</span>
+                                <span className="text-xs font-semibold tracking-wider text-emerald-400 font-mono font-bold">▲ Target Meta</span>
                               </div>
-                              <p className="text-[10px] text-slate-400 font-light mt-1.5">Only 2 critical breaches over 45 total listings</p>
+                              <p className="text-xs font-semibold tracking-wider text-slate-400 font-light mt-1.5">Only 2 critical breaches over 45 total listings</p>
                               <div className="absolute top-4 right-4 text-slate-700 group-hover:text-indigo-400 transition-colors">
                                 <ShieldCheck className="w-4 h-4" />
                               </div>
@@ -2976,7 +2976,7 @@ export default function App() {
                               <div className="flex items-baseline gap-2 mt-2">
                                 <span className="text-2xl font-black text-white font-sans tracking-tight">28.4% ➔ 42.1%</span>
                               </div>
-                              <p className="text-[10px] text-slate-400 font-light mt-1.5">Inbound-to-Scheduled | Booked-to-Won Ratio</p>
+                              <p className="text-xs font-semibold tracking-wider text-slate-400 font-light mt-1.5">Inbound-to-Scheduled | Booked-to-Won Ratio</p>
                               <div className="absolute top-4 right-4 text-slate-700 group-hover:text-indigo-400 transition-colors">
                                 <TrendingUp className="w-4 h-4" />
                               </div>
@@ -2987,9 +2987,9 @@ export default function App() {
                               <span className="text-[9px] font-mono text-rose-455 font-bold uppercase tracking-wider block">Pipeline Asset Mapping</span>
                               <div className="flex items-baseline gap-2 mt-2">
                                 <span className="text-2xl font-black text-white font-sans tracking-tight">$412,500</span>
-                                <span className="text-[10px] text-emerald-400 font-mono font-bold"> $182K Won</span>
+                                <span className="text-xs font-semibold tracking-wider text-emerald-400 font-mono font-bold"> $182K Won</span>
                               </div>
-                              <p className="text-[10px] text-slate-400 font-light mt-1.5">Calculated as dynamic weighted contract scopes</p>
+                              <p className="text-xs font-semibold tracking-wider text-slate-400 font-light mt-1.5">Calculated as dynamic weighted contract scopes</p>
                               <div className="absolute top-4 right-4 text-slate-700 group-hover:text-indigo-400 transition-colors">
                                 <DollarSign className="w-4 h-4" />
                               </div>
@@ -3007,7 +3007,7 @@ export default function App() {
                           <div className="overflow-x-auto">
                             <table className="w-full text-left text-xs border-collapse">
                               <thead>
-                                <tr className="border-b border-slate-100 bg-slate-50 text-slate-500 font-mono text-[10px] uppercase font-bold">
+                                <tr className="border-b border-slate-100 bg-slate-50 text-slate-300 font-mono text-xs font-semibold tracking-wider uppercase font-bold">
                                   <th className="p-2.5">KPI Reporting Field</th>
                                   <th className="p-2.5">Airtable Field Type</th>
                                   <th className="p-2.5 font-bold text-indigo-650">Required Rollup Configurations & Math Formulas</th>
@@ -3018,22 +3018,22 @@ export default function App() {
                                 
                                 <tr className="hover:bg-slate-50/40 transition-colors text-left">
                                   <td className="p-2.5 font-semibold text-slate-900">Reporting Month ID</td>
-                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Single Line Text (Key)</span></td>
-                                  <td className="p-2.5 text-slate-500 italic">E.g., "MONTH - May 2026"</td>
+                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Single Line Text (Key)</span></td>
+                                  <td className="p-2.5 text-slate-300 italic">E.g., "MONTH - May 2026"</td>
                                   <td className="p-2.5 text-slate-550 font-light">Sets the temporal scope for rollup filters</td>
                                 </tr>
 
                                 <tr className="hover:bg-slate-50/40 transition-colors text-left">
                                   <td className="p-2.5 font-semibold text-slate-900">Leads Connection</td>
-                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-indigo-50 text-indigo-805 border border-indigo-105 font-mono text-[10px]">Linked Record</span></td>
+                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-indigo-50 text-indigo-805 border border-indigo-105 font-mono text-xs font-semibold tracking-wider">Linked Record</span></td>
                                   <td className="p-2.5 font-semibold text-slate-900">Link to: 'Leads' (One-to-Many Link)</td>
                                   <td className="p-2.5 text-slate-550 font-light">Draws in all prospective submissions registered for the target month</td>
                                 </tr>
 
                                 <tr className="hover:bg-slate-50/40 transition-colors text-left">
                                   <td className="p-2.5 font-semibold text-slate-900">Average Speed-to-Lead</td>
-                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Rollup</span></td>
-                                  <td className="p-2.5 font-mono text-indigo-600 text-[10px]">
+                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Rollup</span></td>
+                                  <td className="p-2.5 font-mono text-indigo-600 text-xs font-semibold tracking-wider">
                                     <div className="font-bold text-slate-800">Target: {`{Leads}`} ➔ Field: {`{First Touch Speed (Mins)}`}</div>
                                     <div className="bg-slate-50 border p-1 rounded mt-1 text-slate-700 whitespace-pre">AVERAGE(values)</div>
                                   </td>
@@ -3042,8 +3042,8 @@ export default function App() {
 
                                 <tr className="hover:bg-slate-50/40 transition-colors text-left">
                                   <td className="p-2.5 font-semibold text-slate-900">SLA Compliance Rate</td>
-                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Rollup</span></td>
-                                  <td className="p-2.5 font-mono text-indigo-600 text-[10px]">
+                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Rollup</span></td>
+                                  <td className="p-2.5 font-mono text-indigo-600 text-xs font-semibold tracking-wider">
                                     <div className="font-bold text-slate-800">Target: {`{Leads}`} ➔ Field: {`{Inside 4h SLA Check}`}</div>
                                     <div className="bg-slate-50 border p-1 rounded mt-1 text-slate-700 whitespace-pre">SUM(values) / COUNTA(values)</div>
                                   </td>
@@ -3052,18 +3052,18 @@ export default function App() {
 
                                 <tr className="hover:bg-slate-50/40 transition-colors text-left">
                                   <td className="p-2.5 font-semibold text-slate-900">Inbound to Meeting Rate</td>
-                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-105 font-mono text-[10px]">Rollup</span></td>
-                                  <td className="p-2.5 font-mono text-indigo-600 text-[10px]">
+                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-105 font-mono text-xs font-semibold tracking-wider">Rollup</span></td>
+                                  <td className="p-2.5 font-mono text-indigo-600 text-xs font-semibold tracking-wider">
                                     <div className="font-bold text-slate-800">Target: {`{Leads}`} ➔ Field: {`{Booking Registered Flag}`}</div>
                                     <div className="bg-slate-50 border p-1 rounded mt-1 text-slate-700 whitespace-pre">SUM(values) / COUNTA(values)</div>
                                   </td>
-                                  <td className="p-2.5 text-slate-55o text-[11px] font-sans font-light">Measures how many cold lead submissions successfully log a booking call</td>
+                                  <td className="p-2.5 text-slate-55o text-xs font-semibold font-sans font-light">Measures how many cold lead submissions successfully log a booking call</td>
                                 </tr>
 
                                 <tr className="hover:bg-slate-50/40 transition-colors text-left">
                                   <td className="p-2.5 font-semibold text-slate-900">Booking to Won Rate</td>
-                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Rollup</span></td>
-                                  <td className="p-2.5 font-mono text-indigo-600 text-[10px]">
+                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Rollup</span></td>
+                                  <td className="p-2.5 font-mono text-indigo-600 text-xs font-semibold tracking-wider">
                                     <div className="font-bold text-slate-800">Target: {`{Leads}`} ➔ Field: {`{Closed Won Confirmation}`}</div>
                                     <div className="bg-slate-50 border p-1 rounded mt-1 text-slate-700 whitespace-pre">SUM(values) / SUMMARY_COUNT_FILTERED(values)</div>
                                   </td>
@@ -3072,8 +3072,8 @@ export default function App() {
 
                                 <tr className="hover:bg-slate-50/40 transition-colors text-left">
                                   <td className="p-2.5 font-semibold text-slate-900">Total Opportunity Pipeline</td>
-                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Rollup</span></td>
-                                  <td className="p-2.5 font-mono text-indigo-600 text-[10px]">
+                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Rollup</span></td>
+                                  <td className="p-2.5 font-mono text-indigo-600 text-xs font-semibold tracking-wider">
                                     <div className="font-bold text-slate-800">Target: {`{Leads}`} ➔ Field: {`{Inbound Estimated Budget}`}</div>
                                     <div className="bg-slate-50 border p-1 rounded mt-1 text-slate-700 whitespace-pre">SUM(values)</div>
                                   </td>
@@ -3082,8 +3082,8 @@ export default function App() {
 
                                 <tr className="hover:bg-slate-50/40 transition-colors text-left">
                                   <td className="p-2.5 font-semibold text-slate-900">Total Realized Revenue</td>
-                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Rollup</span></td>
-                                  <td className="p-2.5 font-mono text-indigo-600 text-[10px]">
+                                  <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Rollup</span></td>
+                                  <td className="p-2.5 font-mono text-indigo-600 text-xs font-semibold tracking-wider">
                                     <div className="font-bold text-slate-800">Target: {`{Leads}`} ➔ Field: {`{Total Sales Lifetime Value}`}</div>
                                     <div className="bg-slate-50 border p-1 rounded mt-1 text-slate-700 whitespace-pre">SUM(values)</div>
                                   </td>
@@ -3100,7 +3100,7 @@ export default function App() {
                           <h4 className="text-white font-bold text-xs font-sans flex items-center gap-1.5">
                             👑 Airtable Interface Designer: Premium Visual Configuration
                           </h4>
-                          <p className="text-[11px] text-slate-400 font-light mt-1">
+                          <p className="text-xs font-semibold text-slate-400 font-light mt-1">
                             Do not settle for default grids. Share these exact interface configuration steps with high-ticket buyers to lay out an elite performance command cockpit inside Airtable:
                           </p>
                           
@@ -3163,7 +3163,7 @@ export default function App() {
                         <div className="overflow-x-auto">
                           <table className="w-full text-left text-xs border-collapse">
                             <thead>
-                              <tr className="border-b border-slate-100 bg-slate-50 text-slate-500 font-mono text-[10px] uppercase font-bold">
+                              <tr className="border-b border-slate-100 bg-slate-50 text-slate-300 font-mono text-xs font-semibold tracking-wider uppercase font-bold">
                                 <th className="p-2.5">Field Name</th>
                                 <th className="p-2.5">Airtable Type</th>
                                 <th className="p-2.5 font-bold text-indigo-600">Cross-Link relation (Exact configuration)</th>
@@ -3173,37 +3173,37 @@ export default function App() {
                             <tbody className="divide-y divide-slate-100 text-slate-700">
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Interaction ID</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Formula</span></td>
-                                <td className="p-2.5 font-mono text-indigo-500 text-[10px]">CONCATENATE({`{Type}`}, " - ", DATETIME_FORMAT({`{Log Date}`}, 'MM/DD/YY'))</td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Formula</span></td>
+                                <td className="p-2.5 font-mono text-indigo-500 text-xs font-semibold tracking-wider">CONCATENATE({`{Type}`}, " - ", DATETIME_FORMAT({`{Log Date}`}, 'MM/DD/YY'))</td>
                                 <td className="p-2.5 text-slate-550">Autogenerated distinctive database primary record key</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Lead Registry</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-indigo-50 text-indigo-800 border border-indigo-105 font-mono text-[10px]">Linked Record</span></td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-indigo-50 text-indigo-800 border border-indigo-105 font-mono text-xs font-semibold tracking-wider">Linked Record</span></td>
                                 <td className="p-2.5 font-semibold text-slate-900">Link to: 'Leads' (Many-to-One)</td>
                                 <td className="p-2.5 text-slate-550">Resolves exact corporate record being targeted</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Interaction Type</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Single Select</span></td>
-                                <td className="p-2.5 text-slate-500">Options: Outbound Email, LinkedIn Touch, Intro Loom, Discovery Call, SLA Emergency Alert</td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Single Select</span></td>
+                                <td className="p-2.5 text-slate-300">Options: Outbound Email, LinkedIn Touch, Intro Loom, Discovery Call, SLA Emergency Alert</td>
                                 <td className="p-2.5 text-slate-550 font-light">Determines step inside the client acquisition flow</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Log Date</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Date & Time</span></td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Date & Time</span></td>
                                 <td className="p-2.5 text-slate-400">Defaults to CREATED_TIME()</td>
                                 <td className="p-2.5 text-slate-550">Captures response speed and timestamp parameters</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">SDR Owner Link</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-indigo-50 text-indigo-800 border border-indigo-100 font-mono text-[10px]">Linked Record</span></td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-indigo-50 text-indigo-800 border border-indigo-100 font-mono text-xs font-semibold tracking-wider">Linked Record</span></td>
                                 <td className="p-2.5 font-semibold text-slate-900">Link to: 'Team/Reps' (Many-to-One)</td>
                                 <td className="p-2.5 text-slate-550 font-sans font-light text-xs">Assigns attribution for manual emails or phone tasks</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Log Notes</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Long Text</span></td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Long Text</span></td>
                                 <td className="p-2.5 text-slate-400">N/A</td>
                                 <td className="p-2.5 text-slate-555 font-light">Stores sequence emails, links to custom Loom assets, or call summaries</td>
                               </tr>
@@ -3211,7 +3211,7 @@ export default function App() {
                           </table>
                         </div>
                         
-                        <div className="bg-indigo-50/50 border border-indigo-100 rounded-lg p-4 font-mono text-[11px] text-indigo-950 space-y-1">
+                        <div className="bg-indigo-50/50 border border-indigo-100 rounded-lg p-4 font-mono text-xs font-semibold text-indigo-950 space-y-1">
                           <span className="font-bold text-xs uppercase block text-indigo-900 mb-2">🔄 Rollups triggered on parent 'Leads' table:</span>
                           <div>• <span className="font-bold">Total Attempts</span>: Rollup on <span className="text-indigo-600">Interactions</span> with type: <span className="px-1.5 py-0.5 bg-indigo-100 rounded font-semibold">COUNTA(Type)</span>. Keeps SDR volume fully visible.</div>
                           <div>• <span className="font-bold">Last Dynamic Contact Date</span>: Rollup with type: <span className="px-1.5 py-0.5 bg-indigo-100 rounded font-semibold">MAX(Log Date)</span>. Keeps the pipeline current and SLA alarms aligned.</div>
@@ -3234,7 +3234,7 @@ export default function App() {
                         <div className="overflow-x-auto">
                           <table className="w-full text-left text-xs border-collapse">
                             <thead>
-                              <tr className="border-b border-slate-100 bg-slate-50 text-slate-500 font-mono text-[10px] uppercase font-bold">
+                              <tr className="border-b border-slate-100 bg-slate-50 text-slate-300 font-mono text-xs font-semibold tracking-wider uppercase font-bold">
                                 <th className="p-2.5">Field Name</th>
                                 <th className="p-2.5">Airtable Type</th>
                                 <th className="p-2.5 font-bold text-emerald-600">Cross-Link relation (Exact configuration)</th>
@@ -3244,39 +3244,39 @@ export default function App() {
                             <tbody className="divide-y divide-slate-100 text-slate-700">
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Rep Name</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Single Line Text</span></td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Single Line Text</span></td>
                                 <td className="p-2.5 text-slate-400">Primary Key</td>
                                 <td className="p-2.5 text-slate-550 font-light">SDR or Account Executive full identity</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Rep Status</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Single Select</span></td>
-                                <td className="p-2.5 text-slate-500">Options: Active & Accepting Leads, On Break, Offline</td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Single Select</span></td>
+                                <td className="p-2.5 text-slate-300">Options: Active & Accepting Leads, On Break, Offline</td>
                                 <td className="p-2.5 text-slate-550">Used as routing filters in Zapier / Make.com distribution rules</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Assigned Inbound Leads</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-100 font-mono text-[10px]">Linked Record</span></td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-100 font-mono text-xs font-semibold tracking-wider">Linked Record</span></td>
                                 <td className="p-2.5 font-semibold text-slate-900">Link to: 'Leads' (One-to-Many backlink)</td>
                                 <td className="p-2.5 text-slate-550 font-light">Collection of prospects handled by this sales advisor</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Won Opportunities Registry</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-emerald-50 text-emerald-80 border border-emerald-100 font-mono text-[10px]">Linked Record</span></td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-emerald-50 text-emerald-80 border border-emerald-100 font-mono text-xs font-semibold tracking-wider">Linked Record</span></td>
                                 <td className="p-2.5 font-semibold text-slate-900">Link to: 'Revenue & Attribution' (One-to-Many)</td>
                                 <td className="p-2.5 text-slate-555 font-light animate-fade-in bg-slate-50/10">Direct closed-won deal contracts credited to this rep</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Conversion Rate</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Formula</span></td>
-                                <td className="p-2.5 font-mono text-emerald-600 text-[10px]">{`{Total Won Deals Rollup} / {Total Opportunities Assigned Rollup}`}</td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Formula</span></td>
+                                <td className="p-2.5 font-mono text-emerald-600 text-xs font-semibold tracking-wider">{`{Total Won Deals Rollup} / {Total Opportunities Assigned Rollup}`}</td>
                                 <td className="p-2.5 text-slate-550">Displays individual rep converting yield metrics</td>
                               </tr>
                             </tbody>
                           </table>
                         </div>
 
-                        <div className="bg-emerald-50/50 border border-emerald-100 rounded-lg p-4 font-mono text-[11px] text-emerald-950 space-y-1">
+                        <div className="bg-emerald-50/50 border border-emerald-100 rounded-lg p-4 font-mono text-xs font-semibold text-emerald-950 space-y-1">
                           <span className="font-bold text-xs uppercase block text-emerald-900 mb-2">🔄 Rollups triggered on this 'Team/Reps' table:</span>
                           <div>• <span className="font-bold">Total Opportunities Assigned Rollup</span>: Rollup on <span className="text-emerald-600">Assigned Inbound Leads</span> with type: <span className="px-1.5 py-0.5 bg-emerald-100 rounded font-semibold font-mono">COUNTA(Record ID)</span>. Tracks overall workload.</div>
                           <div>• <span className="font-bold">Total Won Deals Rollup</span>: Rollup on <span className="text-emerald-600">Won Opportunities Registry</span> with type: <span className="px-1.5 py-0.5 bg-emerald-100 rounded font-semibold font-mono">COUNTA(Deal Contract ID)</span>. Measures closed deal volume.</div>
@@ -3300,7 +3300,7 @@ export default function App() {
                         <div className="overflow-x-auto">
                           <table className="w-full text-left text-xs border-collapse">
                             <thead>
-                              <tr className="border-b border-slate-100 bg-slate-50 text-slate-500 font-mono text-[10px] uppercase font-bold">
+                              <tr className="border-b border-slate-100 bg-slate-50 text-slate-300 font-mono text-xs font-semibold tracking-wider uppercase font-bold">
                                 <th className="p-2.5">Field Name</th>
                                 <th className="p-2.5">Airtable Type</th>
                                 <th className="p-2.5 font-bold text-rose-600">Cross-Link relation (Exact configuration)</th>
@@ -3310,37 +3310,37 @@ export default function App() {
                             <tbody className="divide-y divide-slate-100 text-slate-700">
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Deal Contract ID</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-105 font-mono text-[10px]">Formula</span></td>
-                                <td className="p-2.5 font-mono text-rose-500 text-[10px]">CONCATENATE("DEAL - ", {`{Company Lookup}`}, " [$", {`{Contract Value}`}, " - ", {`{Pricing Tier}`} , "]")</td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-105 font-mono text-xs font-semibold tracking-wider">Formula</span></td>
+                                <td className="p-2.5 font-mono text-rose-500 text-xs font-semibold tracking-wider">CONCATENATE("DEAL - ", {`{Company Lookup}`}, " [$", {`{Contract Value}`}, " - ", {`{Pricing Tier}`} , "]")</td>
                                 <td className="p-2.5 text-slate-550">Legal transaction code primary key Signature</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Lead Record ID</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-rose-50 text-rose-800 border border-rose-100 font-mono text-[10px]">Linked Record</span></td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-rose-50 text-rose-800 border border-rose-100 font-mono text-xs font-semibold tracking-wider">Linked Record</span></td>
                                 <td className="p-2.5 font-semibold text-slate-900">Link to: 'Leads' (One-to-One / Many-to-One)</td>
                                 <td className="p-2.5 text-slate-550">Anchors the transaction back to the validated lead registry</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Contract Value</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Currency</span></td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Currency</span></td>
                                 <td className="p-2.5 text-slate-400">Precision: $1.00</td>
                                 <td className="p-2.5 text-slate-550">Financial value of this specific conversion deal</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Pricing Tier</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Single Select</span></td>
-                                <td className="p-2.5 text-slate-500">Options: Base Asset ($350), High-Ticket custom ($3,500), Annual Enterprise Retention ($10,000+)</td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Single Select</span></td>
+                                <td className="p-2.5 text-slate-300">Options: Base Asset ($350), High-Ticket custom ($3,500), Annual Enterprise Retention ($10,000+)</td>
                                 <td className="p-2.5 text-slate-550">Differentiates product margins and upsell successes</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">SDR Credited Representative</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-rose-50 text-rose-800 border border-rose-100 font-mono text-[10px]">Linked Record</span></td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-rose-50 text-rose-800 border border-rose-100 font-mono text-xs font-semibold tracking-wider">Linked Record</span></td>
                                 <td className="p-2.5 font-semibold text-slate-900">Link to: 'Team/Reps' (Many-to-One)</td>
                                 <td className="p-2.5 text-slate-550">Tracks rep commission splits and close efficacy values</td>
                               </tr>
                               <tr className="hover:bg-slate-50/40 transition-colors">
                                 <td className="p-2.5 font-semibold text-slate-900">Origin Attribution Source</td>
-                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px]">Single Line Text</span></td>
+                                <td className="p-2.5"><span className="px-2 py-0.5 rounded bg-slate-100 font-mono text-xs font-semibold tracking-wider">Single Line Text</span></td>
                                 <td className="p-2.5 text-slate-400">Linked to UTM campaign parameters</td>
                                 <td className="p-2.5 text-slate-550">Direct marketing attribution (e.g. LinkedIn Mailout, cold sequence #2, VSL Video embed)</td>
                               </tr>
@@ -3348,7 +3348,7 @@ export default function App() {
                           </table>
                         </div>
 
-                        <div className="bg-rose-50/50 border border-rose-105 rounded-lg p-4 font-mono text-[11px] text-rose-950 space-y-1">
+                        <div className="bg-rose-50/50 border border-rose-105 rounded-lg p-4 font-mono text-xs font-semibold text-rose-950 space-y-1">
                           <span className="font-bold text-xs uppercase block text-rose-900 mb-2">🔄 Rollups triggered on 'Leads' (to display total transactional life-value):</span>
                           <div>• <span className="font-bold">Total Sales Lifetime Value</span>: Rollup on <span className="text-rose-600">Client Revenue Ledger</span> with type: <span className="px-1.5 py-0.5 bg-rose-100 rounded font-semibold font-mono">SUM(Contract Value)</span>. Immediately presents total lifetime value of each enterprise client.</div>
                         </div>
@@ -3362,7 +3362,7 @@ export default function App() {
                     
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-slate-800 pb-4 mb-6 gap-4">
                       <div>
-                        <span className="text-[10px] font-mono text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 font-bold uppercase tracking-wider">
+                        <span className="text-xs font-semibold tracking-wider font-mono text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 font-bold uppercase tracking-wider">
                           RevOps Automated Performance Engine
                         </span>
                         <h3 className="text-base font-bold text-white mt-1">
@@ -3377,7 +3377,7 @@ export default function App() {
                         <button
                           type="button"
                           onClick={handleRouteLead}
-                          className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-bold font-mono px-5 py-2.5 rounded-lg transition-all flex items-center gap-1.5 shadow-sm hover:scale-[1.02] active:scale-[0.98] w-full justify-center md:w-auto shrink-0 cursor-pointer"
+                          className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-base font-semibold min-h-[44px] font-bold font-mono px-5 py-3 min-h-[44px] rounded-lg transition-all flex items-center gap-1.5 shadow-sm hover:scale-[1.02] active:scale-[0.98] w-full justify-center md:w-auto shrink-0 cursor-pointer"
                         >
                           ⚡ Route Inbound Lead
                         </button>
@@ -3389,36 +3389,36 @@ export default function App() {
                       {/* Interactive incoming lead payload */}
                       <div className="bg-slate-955 border border-slate-800 p-4 rounded-xl flex flex-col justify-between">
                         <div>
-                          <span className="text-[10px] font-mono text-slate-400 uppercase tracking-widest block font-bold mb-3">
+                          <span className="text-xs font-semibold tracking-wider font-mono text-slate-400 uppercase tracking-widest block font-bold mb-3">
                             📥 Incoming Lead Payload (Make.com Automation)
                           </span>
                           <div className="space-y-3">
                             <div>
-                              <div className="text-[10px] text-slate-400 font-mono">Company Name:</div>
+                              <div className="text-xs font-semibold tracking-wider text-slate-400 font-mono">Company Name:</div>
                               <div className="text-xs font-bold text-white font-mono">{simulatedIncomingLead.company}</div>
                             </div>
                             <div className="flex justify-between gap-4">
                               <div>
-                                <div className="text-[10px] text-slate-400 font-mono">Size Fit:</div>
+                                <div className="text-xs font-semibold tracking-wider text-slate-400 font-mono">Size Fit:</div>
                                 <div className="text-xs font-bold text-white font-mono">{simulatedIncomingLead.size} headcount</div>
                               </div>
                               <div>
-                                <div className="text-[10px] text-slate-400 font-mono">Tech Stack:</div>
+                                <div className="text-xs font-semibold tracking-wider text-slate-400 font-mono">Tech Stack:</div>
                                 <div className="text-xs font-bold text-white font-mono">{simulatedIncomingLead.tech}</div>
                               </div>
                             </div>
                             <div>
-                              <div className="text-[10px] text-slate-400 font-mono font-medium">Estimated Contract:</div>
+                              <div className="text-xs font-semibold tracking-wider text-slate-400 font-mono font-medium">Estimated Contract:</div>
                               <div className="text-xs font-bold text-emerald-400 font-mono">${simulatedIncomingLead.value.toLocaleString()} USD</div>
                             </div>
                           </div>
                         </div>
 
                         <div className="mt-4 pt-4 border-t border-slate-800">
-                          <span className="text-[10px] font-mono text-indigo-400 font-bold block mb-1">
+                          <span className="text-xs font-semibold tracking-wider font-mono text-indigo-400 font-bold block mb-1">
                             Airtable Routing Rules Applied:
                           </span>
-                          <p className="text-[10px] text-slate-400 leading-relaxed font-light">
+                          <p className="text-xs font-semibold tracking-wider text-slate-400 leading-relaxed font-light">
                             Filters reps with status = <strong>"Active"</strong>, selects the matching record with the lowest lead count, and triggers an instant Slack alert with the custom email copywriting script.
                           </p>
                         </div>
@@ -3426,7 +3426,7 @@ export default function App() {
 
                       {/* Reps dynamic list showing live work allocation rollups */}
                       <div className="md:col-span-2 space-y-3">
-                        <span className="text-[10px] font-mono text-slate-400 uppercase tracking-widest block font-bold">
+                        <span className="text-xs font-semibold tracking-wider font-mono text-slate-400 uppercase tracking-widest block font-bold">
                           📈 Live SDR Rep Workloads & Rolled Up Revenue Metrics
                         </span>
                         
@@ -3440,7 +3440,7 @@ export default function App() {
                                 key={rep.id} 
                                 className={`border p-4 rounded-xl transition-all ${
                                   rep.status === "On Break" 
-                                    ? "bg-slate-900 border-slate-800 text-slate-500 opacity-60"
+                                    ? "bg-slate-900 border-slate-800 text-slate-300 opacity-60"
                                     : "bg-slate-950 border-slate-800 text-slate-105 hover:border-slate-700 hover:bg-slate-950/90"
                                 }`}
                               >
@@ -3456,15 +3456,15 @@ export default function App() {
                                 
                                 <div className="grid grid-cols-2 gap-2 text-left mt-3 pt-2 border-t border-slate-900 font-mono">
                                   <div>
-                                    <span className="text-[8px] text-slate-500 uppercase block leading-none">Load Volume:</span>
-                                    <span className="text-[11px] font-bold text-white">{rep.assignedLeads} Assigned</span>
+                                    <span className="text-[8px] text-slate-300 uppercase block leading-none">Load Volume:</span>
+                                    <span className="text-xs font-semibold font-bold text-white">{rep.assignedLeads} Assigned</span>
                                   </div>
                                   <div>
-                                    <span className="text-[8px] text-slate-500 uppercase block leading-none">Yield Conversion:</span>
-                                    <span className="text-[11px] font-bold text-emerald-400">{conversionRate}% Close</span>
+                                    <span className="text-[8px] text-slate-300 uppercase block leading-none">Yield Conversion:</span>
+                                    <span className="text-xs font-semibold font-bold text-emerald-400">{conversionRate}% Close</span>
                                   </div>
                                   <div className="col-span-2 mt-1">
-                                    <span className="text-[8px] text-slate-500 uppercase block leading-none">Rolled Up Value (SUM Rollup):</span>
+                                    <span className="text-[8px] text-slate-300 uppercase block leading-none">Rolled Up Value (SUM Rollup):</span>
                                     <span className="text-xs font-bold text-indigo-400">${rep.totalRevenue.toLocaleString()} USD</span>
                                   </div>
                                 </div>
@@ -3477,10 +3477,10 @@ export default function App() {
 
                     {/* Simulation Routing Logs Console */}
                     <div className="mt-5 pt-4 border-t border-slate-800">
-                      <span className="text-[10px] font-mono text-emerald-400 uppercase tracking-widest block font-bold mb-2">
+                      <span className="text-xs font-semibold tracking-wider font-mono text-emerald-400 uppercase tracking-widest block font-bold mb-2">
                         💻 Real-time Automation Console Logs:
                       </span>
-                      <div className="bg-slate-950 p-3 rounded-lg border border-slate-800 text-[10px] font-mono space-y-1.5 max-h-24 overflow-y-auto scrollbar-thin">
+                      <div className="bg-slate-950 p-3 rounded-lg border border-slate-800 text-xs font-semibold tracking-wider font-mono space-y-1.5 max-h-24 overflow-y-auto scrollbar-thin">
                         {routingLogs.map((log, idx) => (
                           <div key={idx} className="flex gap-2 text-slate-300 line-clamp-1">
                             <span className="text-indigo-400 shrink-0">►</span>
@@ -3496,33 +3496,33 @@ export default function App() {
                     <h3 className="text-xs font-mono font-bold text-slate-400 uppercase tracking-widest mb-4">
                       🗺️ Absolute Ecosystem Data Flow Topology
                     </h3>
-                    <p className="text-xs text-slate-500 mb-5 leading-relaxed">
+                    <p className="text-xs text-slate-300 mb-5 leading-relaxed">
                       This simplified relational mapping blueprints exactly how database inputs, rollups, and primary keys connect bidirectionally across the tables:
                     </p>
 
-                    <div className="p-4 bg-slate-50 rounded-xl border border-slate-200/80 relative overflow-hidden font-mono text-[11px]">
+                    <div className="p-4 bg-slate-50 rounded-xl border border-slate-200/80 relative overflow-hidden font-mono text-xs font-semibold">
                       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
                         
                         <div className="bg-white p-3.5 rounded-lg border border-slate-200 text-center shadow-xs">
                           <span className="text-[9px] font-bold text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded uppercase block mb-2 font-mono">TABLE 1: LEADS</span>
                           <div className="text-slate-900 font-bold mb-1 font-sans">Company Profile</div>
-                          <div className="text-[10px] text-slate-400 font-sm">Primary ICP Registry with computed Health Scores</div>
-                          <div className="text-[9px] text-slate-500 border-t border-slate-100 mt-2 pt-2">
+                          <div className="text-xs font-semibold tracking-wider text-slate-400 font-sm">Primary ICP Registry with computed Health Scores</div>
+                          <div className="text-[9px] text-slate-300 border-t border-slate-100 mt-2 pt-2">
                             Key: Record ID
                           </div>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-slate-400 py-2">
-                          <div className="hidden md:block text-slate-500 font-bold">◄ One-to-Many ►</div>
-                          <div className="md:hidden text-slate-500 font-bold font-sans">▲ One-to-Many ▼</div>
+                          <div className="hidden md:block text-slate-300 font-bold">◄ One-to-Many ►</div>
+                          <div className="md:hidden text-slate-300 font-bold font-sans">▲ One-to-Many ▼</div>
                           <div className="text-[9px] text-slate-400 mt-1 text-center font-sans">Linked on Record ID</div>
                         </div>
 
                         <div className="bg-white p-3.5 rounded-lg border border-slate-200 text-center shadow-xs">
                           <span className="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded uppercase block mb-2">TABLE 2: TEAM / REPS</span>
                           <div className="text-slate-900 font-bold mb-1 font-sans">Sales Roster</div>
-                          <div className="text-[10px] text-slate-400">Workload, round-robin ranks, and aggregate performance</div>
-                          <div className="text-[9px] text-slate-500 border-t border-slate-100 mt-2 pt-2">
+                          <div className="text-xs font-semibold tracking-wider text-slate-400">Workload, round-robin ranks, and aggregate performance</div>
+                          <div className="text-[9px] text-slate-300 border-t border-slate-100 mt-2 pt-2">
                             Key: Rep Name
                           </div>
                         </div>
@@ -3530,15 +3530,15 @@ export default function App() {
                         <div className="bg-white p-3.5 rounded-lg border border-slate-200 text-center shadow-xs">
                           <span className="text-[9px] font-bold text-rose-600 bg-rose-50 px-1.5 py-0.5 rounded uppercase block mb-2">TABLE 3: REVENUE</span>
                           <div className="text-slate-900 font-bold mb-1 font-sans">Ledger Deals</div>
-                          <div className="text-[10px] text-slate-400 font-sans font-light">Attributing closed contracts to source channels</div>
-                          <div className="text-[9px] text-slate-500 border-t border-slate-100 mt-2 pt-2">
+                          <div className="text-xs font-semibold tracking-wider text-slate-400 font-sans font-light">Attributing closed contracts to source channels</div>
+                          <div className="text-[9px] text-slate-300 border-t border-slate-100 mt-2 pt-2">
                             SUM Rollups triggered
                           </div>
                         </div>
 
                       </div>
 
-                      <div className="bg-slate-250/20 p-3 rounded-lg border border-slate-350/20 text-[10px] text-slate-500 leading-relaxed font-sans font-light mt-5">
+                      <div className="bg-slate-250/20 p-3 rounded-lg border border-slate-350/20 text-xs font-semibold tracking-wider text-slate-300 leading-relaxed font-sans font-light mt-5">
                         💡 <strong>RevOps Professional Pro-Tip:</strong> Set the link directionality of your <strong>Touchpoints Table</strong> so that SDR agents can see the complete outreach trajectory inside the side-card of the main Leads workspace. This avoids dashboard tab clutter and boosts overall close speeds.
                       </div>
                     </div>
@@ -3557,7 +3557,7 @@ export default function App() {
                         <Zap className="w-6 h-6 text-amber-600 animate-pulse" />
                       </div>
                       <div className="text-left">
-                        <span className="text-[10px] font-mono tracking-widest font-bold text-amber-800 bg-amber-100/80 border border-amber-200 uppercase px-2.5 py-1 rounded">
+                        <span className="text-xs font-semibold tracking-wider font-mono tracking-widest font-bold text-amber-800 bg-amber-100/80 border border-amber-200 uppercase px-2.5 py-1 rounded">
                           RevOps High-Value Automation Blueprints
                         </span>
                         <h3 className="text-lg font-bold text-slate-900 mt-2.5">
@@ -3578,7 +3578,7 @@ export default function App() {
                       className={`py-3 text-xs font-mono font-bold rounded-lg transition-all flex items-center justify-center gap-2 ${
                         activeScenario === "ingestion"
                           ? "bg-white text-slate-900 shadow-xs border border-slate-200"
-                          : "text-slate-500 hover:text-slate-650"
+                          : "text-slate-300 hover:text-slate-650"
                       }`}
                     >
                       <Workflow className="w-4 h-4 text-indigo-500" />
@@ -3590,7 +3590,7 @@ export default function App() {
                       className={`py-3 text-xs font-mono font-bold rounded-lg transition-all flex items-center justify-center gap-2 ${
                         activeScenario === "sla"
                           ? "bg-white text-slate-900 shadow-xs border border-slate-200"
-                          : "text-slate-500 hover:text-slate-650"
+                          : "text-slate-300 hover:text-slate-650"
                       }`}
                     >
                       <AlertCircle className="w-4 h-4 text-rose-500 animate-pulse" />
@@ -3602,7 +3602,7 @@ export default function App() {
                       className={`py-3 text-xs font-mono font-bold rounded-lg transition-all flex items-center justify-center gap-2 ${
                         activeScenario === "daily_snapshot"
                           ? "bg-white text-slate-900 shadow-xs border border-slate-200"
-                          : "text-slate-500 hover:text-slate-650"
+                          : "text-slate-300 hover:text-slate-650"
                       }`}
                     >
                       <ClipboardList className="w-4 h-4 text-emerald-500" />
@@ -3614,7 +3614,7 @@ export default function App() {
                       className={`py-3 text-xs font-mono font-bold rounded-lg transition-all flex items-center justify-center gap-2 ${
                         activeScenario === "roi_trigger"
                           ? "bg-white text-slate-900 shadow-xs border border-slate-200"
-                          : "text-slate-500 hover:text-slate-650"
+                          : "text-slate-300 hover:text-slate-650"
                       }`}
                     >
                       <TrendingUp className="w-4 h-4 text-indigo-500" />
@@ -3653,7 +3653,7 @@ export default function App() {
                                 <h5 className="text-xs font-bold text-slate-900 leading-tight">
                                   {nd.title}
                                 </h5>
-                                <p className="text-[10px] text-slate-405 mt-1.5 leading-snug font-light">
+                                <p className="text-xs font-semibold tracking-wider text-slate-405 mt-1.5 leading-snug font-light">
                                   {nd.desc}
                                 </p>
                               </div>
@@ -3685,7 +3685,7 @@ export default function App() {
                               </div>
                               <ul className="list-disc pl-5 space-y-1 font-light text-slate-600">
                                 <li><strong>Trigger Module:</strong> Webhook {"->"} Custom Webhook (triggered instantly when payload arrives).</li>
-                                <li><strong>Input Payload Fields (Expected):</strong> <span className="font-mono bg-slate-150 px-1 py-0.5 rounded text-[10px]">email</span> (String), <span className="font-mono bg-slate-150 px-1 py-0.5 rounded text-[10px]">fullName</span> (String), <span className="font-mono bg-slate-150 px-1 py-0.5 rounded text-[10px]">company</span> (String), <span className="font-mono bg-slate-150 px-1 py-0.5 rounded text-[10px]">message</span> (String).</li>
+                                <li><strong>Input Payload Fields (Expected):</strong> <span className="font-mono bg-slate-150 px-1 py-0.5 rounded text-xs font-semibold tracking-wider">email</span> (String), <span className="font-mono bg-slate-150 px-1 py-0.5 rounded text-xs font-semibold tracking-wider">fullName</span> (String), <span className="font-mono bg-slate-150 px-1 py-0.5 rounded text-xs font-semibold tracking-wider">company</span> (String), <span className="font-mono bg-slate-150 px-1 py-0.5 rounded text-xs font-semibold tracking-wider">message</span> (String).</li>
                                 <li><strong>Webhook URL Integration:</strong> Provide the webhook URI to client webform endpoints (such as Framer native form webhook, Elementor forms, or Typeform webhook integration) to trigger the Make flow.</li>
                               </ul>
                             </div>
@@ -3699,10 +3699,10 @@ export default function App() {
                                 Feed the inbound corporate email or domain name into the enrichment service to fetch crucial firmographic attributes.
                               </p>
                               <ul className="list-disc pl-5 space-y-1 font-light text-slate-650">
-                                <li><strong>Endpoint:</strong> <span className="font-mono text-indigo-500 bg-slate-100 px-1 py-0.5 rounded text-[10px]">POST https://api.apollo.io/v1/people/match</span> (or relevant clay endpoint)</li>
+                                <li><strong>Endpoint:</strong> <span className="font-mono text-indigo-500 bg-slate-100 px-1 py-0.5 rounded text-xs font-semibold tracking-wider">POST https://api.apollo.io/v1/people/match</span> (or relevant clay endpoint)</li>
                                 <li><strong>Headers:</strong> Mapped with authentication Bearer token and Content-Type definitions.</li>
-                                <li><strong>Body Parameters:</strong> <span className="font-mono text-[10px]">{`{"email": "{{1.email}}", "company_name": "{{1.company}}"}`}</span></li>
-                                <li><strong>Key Variables Extracted:</strong> Organization Headcount (<span className="font-mono text-[10px]">{`{{organization_employees}}`}</span>), Corporate Revenue Tier (<span className="font-mono text-[10px]">{`{{organization_estimated_num_employees}}`}</span>), Technologies used (<span className="font-mono text-[10px]">{`{{organization_technological_tags}}`}</span>).</li>
+                                <li><strong>Body Parameters:</strong> <span className="font-mono text-xs font-semibold tracking-wider">{`{"email": "{{1.email}}", "company_name": "{{1.company}}"}`}</span></li>
+                                <li><strong>Key Variables Extracted:</strong> Organization Headcount (<span className="font-mono text-xs font-semibold tracking-wider">{`{{organization_employees}}`}</span>), Corporate Revenue Tier (<span className="font-mono text-xs font-semibold tracking-wider">{`{{organization_estimated_num_employees}}`}</span>), Technologies used (<span className="font-mono text-xs font-semibold tracking-wider">{`{{organization_technological_tags}}`}</span>).</li>
                               </ul>
                             </div>
 
@@ -3716,7 +3716,7 @@ export default function App() {
                               </p>
                               <ul className="list-disc pl-5 space-y-1 font-light text-slate-655">
                                 <li><strong>Target Table:</strong> 'Leads'</li>
-                                <li><strong>Formula Filter Rule:</strong> <span className="font-mono text-[11px] bg-indigo-50 text-indigo-700 px-1.5 py-0.5 rounded font-semibold border border-indigo-150">{"AND({Corporate Email} = '{{1.email}}', {Lead Status} != 'Archived')"}</span></li>
+                                <li><strong>Formula Filter Rule:</strong> <span className="font-mono text-xs font-semibold bg-indigo-50 text-indigo-700 px-1.5 py-0.5 rounded font-semibold border border-indigo-150">{"AND({Corporate Email} = '{{1.email}}', {Lead Status} != 'Archived')"}</span></li>
                                 <li><strong>Fetch Limits:</strong> Limit records fetched to 1 to save processing bandwidth.</li>
                               </ul>
                             </div>
@@ -3732,14 +3732,14 @@ export default function App() {
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-1 pt-1">
                                 <div className="p-3.5 bg-white border border-dashed border-slate-200 rounded text-left">
                                   <span className="font-bold text-slate-750 block text-[10.5px] font-mono text-indigo-600">ROUTE A (Match Found)</span>
-                                  <p className="text-[10px] text-slate-550 font-light mt-1">
+                                  <p className="text-xs font-semibold tracking-wider text-slate-550 font-light mt-1">
                                     <strong>Filter Condition:</strong> Record ID <em>Exists</em>.<br />
                                     <strong>Action:</strong> Trigger an active update module. Set Lead Status = 'Re-Activated Inbound', append the new contact message to the Touchpoints history, and bump the Last Contact Timer.
                                   </p>
                                 </div>
                                 <div className="p-3.5 bg-white border border-dashed border-slate-200 rounded text-left">
                                   <span className="font-bold text-slate-750 block text-[10.5px] font-mono text-emerald-600">ROUTE B (No Match)</span>
-                                  <p className="text-[10px] text-slate-550 font-light mt-1">
+                                  <p className="text-xs font-semibold tracking-wider text-slate-550 font-light mt-1">
                                     <strong>Filter Condition:</strong> Record ID <em>Does NOT Exist</em>.<br />
                                     <strong>Action:</strong> Trigger an Airtable "Create Record" module. Write all parsed demographic attributes, set Status = 'Prospect', assign to the active Round-Robin Rep, and set {`{SLA Response Countdown}`} = <span className="font-mono">NOW()</span> to initiate the 4-hour countdown.
                                   </p>
@@ -3754,7 +3754,7 @@ export default function App() {
                         <div className="lg:col-span-4 space-y-6 text-left">
                           <div className="bg-slate-900 text-slate-100 rounded-xl p-5 border border-slate-950 shadow-md">
                             <div className="flex justify-between items-center mb-4">
-                              <span className="text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-widest flex items-center gap-1">
+                              <span className="text-xs font-semibold tracking-wider font-mono text-indigo-400 font-bold uppercase tracking-widest flex items-center gap-1">
                                 <Sliders className="w-3 h-3" />
                                 Form Webhook Payload (JSON)
                               </span>
@@ -3774,7 +3774,7 @@ export default function App() {
                                   }, null, 2),
                                   "payload-enrich"
                                 )}
-                                className="text-[10px] bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 font-mono px-2 py-1 rounded select-none cursor-pointer flex items-center gap-1 shrink-0"
+                                className="text-xs font-semibold tracking-wider bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 font-mono px-2 py-1 rounded select-none cursor-pointer flex items-center gap-1 shrink-0"
                               >
                                 {copiedState === "payload-enrich" ? (
                                   <>
@@ -3790,11 +3790,11 @@ export default function App() {
                               </button>
                             </div>
 
-                            <p className="text-[10px] text-slate-400 leading-relaxed font-light mb-4">
+                            <p className="text-xs font-semibold tracking-wider text-slate-400 leading-relaxed font-light mb-4">
                               Deploy this exact data payload into your web scraper / webhook listener to auto-trigger scenarios:
                             </p>
 
-                            <pre className="p-3 bg-slate-950 rounded-lg text-[10px] font-mono text-emerald-400 border border-slate-800 overflow-x-auto">
+                            <pre className="p-3 bg-slate-950 rounded-lg text-xs font-semibold tracking-wider font-mono text-emerald-400 border border-slate-800 overflow-x-auto">
 {`{
   "event": "submission",
   "source": "Framer Lead Form",
@@ -3807,19 +3807,19 @@ export default function App() {
 }`}
                             </pre>
 
-                            <div className="border-t border-slate-850 mt-5 pt-4 font-mono text-[10px] text-slate-400">
-                              <div className="text-[10px] font-mono uppercase font-bold text-slate-400">Database Schema Target Mappings:</div>
+                            <div className="border-t border-slate-850 mt-5 pt-4 font-mono text-xs font-semibold tracking-wider text-slate-400">
+                              <div className="text-xs font-semibold tracking-wider font-mono uppercase font-bold text-slate-400">Database Schema Target Mappings:</div>
                               <div className="mt-2.5 space-y-2">
                                 <div className="flex justify-between border-b border-slate-950 pb-1.5 leading-none">
-                                  <span className="text-slate-500 font-light">Lead Rep Name:</span>
+                                  <span className="text-slate-300 font-light">Lead Rep Name:</span>
                                   <span className="text-slate-305 font-medium">fullName</span>
                                 </div>
                                 <div className="flex justify-between border-b border-slate-950 pb-1.5 leading-none">
-                                  <span className="text-slate-500 font-light">Lead Company:</span>
+                                  <span className="text-slate-300 font-light">Lead Company:</span>
                                   <span className="text-slate-305 font-medium">company</span>
                                 </div>
                                 <div className="flex justify-between leading-none">
-                                  <span className="text-slate-500 font-light">Initial Stage:</span>
+                                  <span className="text-slate-300 font-light">Initial Stage:</span>
                                   <span className="text-emerald-400 font-bold font-mono">Default Status</span>
                                 </div>
                               </div>
@@ -3827,10 +3827,10 @@ export default function App() {
                           </div>
 
                           <div className="bg-gradient-to-br from-indigo-50 to-indigo-100/50 border border-indigo-150 p-5 rounded-xl space-y-2.5">
-                            <h5 className="text-[11px] font-mono font-bold text-indigo-900 uppercase tracking-wide">
+                            <h5 className="text-xs font-semibold font-mono font-bold text-indigo-900 uppercase tracking-wide">
                               💡 Strategy Insight for Agency Founders
                             </h5>
-                            <p className="text-[11px] text-slate-650 leading-relaxed font-light">
+                            <p className="text-xs font-semibold text-slate-650 leading-relaxed font-light">
                               Manual B2B data logging leaks critical margins. Demonstrating raw API schemas to buyers proves complete system authority, converting template sales into high-ticket execution retainers with structural onboarding maps.
                             </p>
                           </div>
@@ -3870,7 +3870,7 @@ export default function App() {
                                 <h5 className="text-xs font-bold text-slate-900 leading-tight">
                                   {nd.title}
                                 </h5>
-                                <p className="text-[10px] text-slate-400 mt-1.5 leading-snug font-light">
+                                <p className="text-xs font-semibold tracking-wider text-slate-400 mt-1.5 leading-snug font-light">
                                   {nd.desc}
                                 </p>
                               </div>
@@ -3905,7 +3905,7 @@ export default function App() {
                               </p>
                               <ul className="list-disc pl-5 space-y-1 font-light text-slate-600">
                                 <li><strong>Airtable Trigger View Filters:</strong>
-                                  <ul className="list-disc pl-5 mt-1 text-slate-550 text-[11px]">
+                                  <ul className="list-disc pl-5 mt-1 text-slate-550 text-xs font-semibold">
                                     <li>Filter 1: <span className="font-mono">{`{Contacted Status} = FALSE`}</span></li>
                                     <li>Filter 2: <span className="font-mono">{`{Lead Status} = 'Prospect'`}</span></li>
                                     <li>Filter 3: <span className="font-mono bg-slate-100 px-1 py-0.2 px-1 rounded">{`{SLA Elapsed Hours} > 4.00`}</span></li>
@@ -3926,7 +3926,7 @@ export default function App() {
                               <ul className="list-disc pl-5 space-y-1 font-light text-slate-600">
                                 <li><strong>Target Table:</strong> 'Team / Reps'</li>
                                 <li><strong>Record ID Target:</strong> <span className="font-mono">{`{{1.SDR_Owner_Link[0]}}`}</span> (the matching row created during round-robin lead allocation).</li>
-                                <li><strong>Properties Retrieved:</strong> <span className="font-mono text-[10px] bg-slate-100 px-1">Rep Name</span>, <span className="font-mono text-[10px] bg-slate-100 px-1">Slack User ID</span>, <span className="font-mono text-[10px] bg-slate-100 px-1">Active Status Check</span>.</li>
+                                <li><strong>Properties Retrieved:</strong> <span className="font-mono text-xs font-semibold tracking-wider bg-slate-100 px-1">Rep Name</span>, <span className="font-mono text-xs font-semibold tracking-wider bg-slate-100 px-1">Slack User ID</span>, <span className="font-mono text-xs font-semibold tracking-wider bg-slate-100 px-1">Active Status Check</span>.</li>
                               </ul>
                             </div>
 
@@ -3939,7 +3939,7 @@ export default function App() {
                                 Automatically formats the alert, retrieving the AI-generated copywriting message sequence blocks and injecting variables.
                               </p>
                               <ul className="list-disc pl-5 space-y-1 font-light text-slate-600">
-                                <li><strong>Dynamic Copy Mappers:</strong> Swaps out variables like <span className="font-mono text-[10px] bg-slate-100 px-1 py-0.5 rounded text-indigo-600">{`{{1.Company}}`}</span> and <span className="font-mono text-[10px] bg-slate-100 px-1 py-0.5 rounded text-indigo-600">{`{{1.Contact_First_Name}}`}</span>.</li>
+                                <li><strong>Dynamic Copy Mappers:</strong> Swaps out variables like <span className="font-mono text-xs font-semibold tracking-wider bg-slate-100 px-1 py-0.5 rounded text-indigo-600">{`{{1.Company}}`}</span> and <span className="font-mono text-xs font-semibold tracking-wider bg-slate-100 px-1 py-0.5 rounded text-indigo-600">{`{{1.Contact_First_Name}}`}</span>.</li>
                                 <li>Ensures the sales agent receives a pre-baked pitch template ready to dispatch.</li>
                               </ul>
                             </div>
@@ -3953,7 +3953,7 @@ export default function App() {
                                 Dispatches a beautiful interactive card straight to Slack, tagging the specific representative user to trigger visual alerts on their workstation.
                               </p>
                               <ul className="list-disc pl-5 space-y-1 font-light text-slate-600">
-                                <li><strong>Receiver User Tag:</strong> Dynamic format <span className="font-mono text-[10px] bg-slate-100 px-1 py-0.5 rounded text-rose-600">{`<@{{2.Slack_User_ID}}>`}</span> alerts the explicit rep.</li>
+                                <li><strong>Receiver User Tag:</strong> Dynamic format <span className="font-mono text-xs font-semibold tracking-wider bg-slate-100 px-1 py-0.5 rounded text-rose-600">{`<@{{2.Slack_User_ID}}>`}</span> alerts the explicit rep.</li>
                                 <li><strong>Action Buttons:</strong> Injects interactive Slack action buttons with links to open the Airtable Lead details directly in the browser.</li>
                               </ul>
                             </div>
@@ -3965,7 +3965,7 @@ export default function App() {
                         <div className="lg:col-span-4 space-y-6 text-left">
                           <div className="bg-slate-900 text-slate-100 rounded-xl p-5 border border-slate-950 shadow-md">
                             <div className="flex justify-between items-center mb-4 font-mono text-[10.5px]">
-                              <span className="text-[10px] font-mono text-rose-400 font-bold uppercase tracking-widest flex items-center gap-1">
+                              <span className="text-xs font-semibold tracking-wider font-mono text-rose-400 font-bold uppercase tracking-widest flex items-center gap-1">
                                 <Sliders className="w-3 h-3" />
                                 Slack Block Kit Response Payload (JSON)
                               </span>
@@ -4005,7 +4005,7 @@ export default function App() {
                                   }, null, 2),
                                   "payload-slack"
                                 )}
-                                className="text-[10px] bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 font-mono px-2 py-1 rounded select-none cursor-pointer flex items-center gap-1 shrink-0"
+                                className="text-xs font-semibold tracking-wider bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 font-mono px-2 py-1 rounded select-none cursor-pointer flex items-center gap-1 shrink-0"
                               >
                                 {copiedState === "payload-slack" ? (
                                   <>
@@ -4021,11 +4021,11 @@ export default function App() {
                               </button>
                             </div>
 
-                            <p className="text-[10px] text-slate-400 leading-relaxed font-light mb-4 text-left">
+                            <p className="text-xs font-semibold tracking-wider text-slate-400 leading-relaxed font-light mb-4 text-left">
                               This raw payload compiles a perfect interactive Rich notification directly in Slack:
                             </p>
 
-                            <pre className="p-3 bg-slate-950 rounded-lg text-[10px] font-mono text-rose-450 border border-slate-800 overflow-x-auto max-h-56">
+                            <pre className="p-3 bg-slate-950 rounded-lg text-xs font-semibold tracking-wider font-mono text-rose-450 border border-slate-800 overflow-x-auto max-h-56">
 {`{
   "text": "🚨 SLA BREACH",
   "blocks": [
@@ -4048,18 +4048,18 @@ export default function App() {
                             </pre>
 
                             <div className="border-t border-slate-850 mt-5 pt-4">
-                              <span className="text-[10px] font-mono uppercase font-bold text-slate-400 block mb-1">Slack Channel Endpoint:</span>
-                              <p className="text-[10px] text-slate-400 leading-normal font-light">
+                              <span className="text-xs font-semibold tracking-wider font-mono uppercase font-bold text-slate-400 block mb-1">Slack Channel Endpoint:</span>
+                              <p className="text-xs font-semibold tracking-wider text-slate-400 leading-normal font-light">
                                 Setup a private channel (e.g. <strong>#sales-sla-alerts</strong>) with Slack incoming webhook permissions to receive these pushes.
                               </p>
                             </div>
                           </div>
 
                           <div className="bg-gradient-to-br from-rose-50 to-rose-100/50 border border-rose-150 p-5 rounded-xl space-y-2.5">
-                            <h5 className="text-[11px] font-mono font-bold text-rose-900 uppercase tracking-wide">
+                            <h5 className="text-xs font-semibold font-mono font-bold text-rose-900 uppercase tracking-wide">
                               ⚠️ The Enterprise Operational Leak
                             </h5>
-                            <p className="text-[11px] text-slate-650 leading-relaxed font-light font-sans">
+                            <p className="text-xs font-semibold text-slate-650 leading-relaxed font-light font-sans">
                               For high-volume growth firms, leads left uncontacted past <strong>4 hours decay in closing capacity by 80%</strong>. This SLA notify engine guarantees perfect rep accountability, serving as an outstanding B2B Ops upgrade pitch to justify your custom retainer.
                             </p>
                           </div>
@@ -4099,7 +4099,7 @@ export default function App() {
                                 <h5 className="text-xs font-bold text-slate-900 leading-tight font-sans">
                                   {nd.title}
                                 </h5>
-                                <p className="text-[10px] text-slate-400 mt-1.5 leading-snug font-light">
+                                <p className="text-xs font-semibold tracking-wider text-slate-400 mt-1.5 leading-snug font-light">
                                   {nd.desc}
                                 </p>
                               </div>
@@ -4149,11 +4149,11 @@ export default function App() {
                               <ul className="list-disc pl-5 space-y-2 font-light text-slate-600">
                                 <li>
                                   <strong className="text-slate-800">Operational Open Formula:</strong>
-                                  <div className="font-mono text-[10px] bg-slate-100 p-1 rounded mt-1 overflow-x-auto font-mono">AND(&#123;Lead Stage&#125; != 'Closed-Won', &#123;Lead Stage&#125; != 'Archived')</div>
+                                  <div className="font-mono text-xs font-semibold tracking-wider bg-slate-100 p-1 rounded mt-1 overflow-x-auto font-mono">AND(&#123;Lead Stage&#125; != 'Closed-Won', &#123;Lead Stage&#125; != 'Archived')</div>
                                 </li>
                                 <li>
                                   <strong className="text-slate-800">Critical SLA Breaches Checks Formula:</strong>
-                                  <div className="font-mono text-[10px] bg-slate-100 p-1 rounded mt-1 overflow-x-auto font-mono">AND(&#123;Contacted&#125; = FALSE, &#123;SLA Elapsed Hours&#125; &gt; 4.00)</div>
+                                  <div className="font-mono text-xs font-semibold tracking-wider bg-slate-100 p-1 rounded mt-1 overflow-x-auto font-mono">AND(&#123;Contacted&#125; = FALSE, &#123;SLA Elapsed Hours&#125; &gt; 4.00)</div>
                                 </li>
                               </ul>
                             </div>
@@ -4169,7 +4169,7 @@ export default function App() {
                               <ul className="list-disc pl-5 space-y-1 font-light text-slate-600">
                                 <li><strong>Filtering Target:</strong> Filter interactions logging meetings on the calendar today.</li>
                                 <li><strong>Formula Logic:</strong>
-                                  <div className="font-mono text-[10px] bg-slate-100 p-1 rounded mt-1 overflow-x-auto font-mono">AND(&#123;Interaction Type&#125; = 'Meeting Scheduled', IS_SAME(&#123;Logged Timestamp&#125;, TODAY()))</div>
+                                  <div className="font-mono text-xs font-semibold tracking-wider bg-slate-100 p-1 rounded mt-1 overflow-x-auto font-mono">AND(&#123;Interaction Type&#125; = 'Meeting Scheduled', IS_SAME(&#123;Logged Timestamp&#125;, TODAY()))</div>
                                 </li>
                               </ul>
                             </div>
@@ -4196,7 +4196,7 @@ export default function App() {
                         <div className="lg:col-span-4 space-y-6 text-left font-sans">
                           <div className="bg-slate-900 text-slate-100 rounded-xl p-5 border border-slate-950 shadow-md">
                             <div className="flex justify-between items-center mb-4 font-mono text-[10.5px]">
-                              <span className="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-widest flex items-center gap-1 font-sans">
+                              <span className="text-xs font-semibold tracking-wider font-mono text-emerald-400 font-bold uppercase tracking-widest flex items-center gap-1 font-sans">
                                 <Sliders className="w-3 h-3" />
                                 Make.com Blueprint JSON Schema
                               </span>
@@ -4214,7 +4214,7 @@ export default function App() {
                                   }, null, 2),
                                   "payload-daily-snapshot"
                                 )}
-                                className="text-[10px] bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 font-mono px-2 py-1 rounded select-none cursor-pointer flex items-center gap-1 shrink-0"
+                                className="text-xs font-semibold tracking-wider bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 font-mono px-2 py-1 rounded select-none cursor-pointer flex items-center gap-1 shrink-0"
                               >
                                 {copiedState === "payload-daily-snapshot" ? (
                                   <>
@@ -4230,27 +4230,27 @@ export default function App() {
                               </button>
                             </div>
 
-                            <p className="text-[10px] text-slate-400 leading-relaxed font-light mb-4 text-left font-sans">
+                            <p className="text-xs font-semibold tracking-wider text-slate-400 leading-relaxed font-light mb-4 text-left font-sans">
                               This blueprint executes daily performance reports and loads variables seamlessly to prevent operational table degradation:
                             </p>
 
-                            <pre className="p-3 bg-slate-950 rounded-lg text-[10px] font-mono text-emerald-350 border border-slate-800 overflow-x-auto max-h-56 font-mono">
+                            <pre className="p-3 bg-slate-950 rounded-lg text-xs font-semibold tracking-wider font-mono text-emerald-350 border border-slate-800 overflow-x-auto max-h-56 font-mono">
 {"{\n  \"schedule\": {\n    \"type\": \"daily\",\n    \"time\": \"23:59\"\n  },\n  \"modules\": [\n    {\n      \"name\": \"Audit_Open_Leads_Volume\",\n      \"action\": \"Airtable_Search\"\n    },\n    {\n      \"name\": \"Trace_SLA_Exposed_Breaches\",\n      \"action\": \"Airtable_Search\"\n    }\n  ]\n}"}
                             </pre>
 
                             <div className="border-t border-slate-850 mt-5 pt-4 text-left font-sans">
-                              <span className="text-[10px] font-mono uppercase font-bold text-slate-400 block mb-1">Audit Ledger Goal:</span>
-                              <p className="text-[10px] text-slate-400 leading-normal font-light">
+                              <span className="text-xs font-semibold tracking-wider font-mono uppercase font-bold text-slate-400 block mb-1">Audit Ledger Goal:</span>
+                              <p className="text-xs font-semibold tracking-wider text-slate-400 leading-normal font-light">
                                 Connect this module directly to a dedicated Airtable historical data summary record sheet to calculate rolling 7-day or 30-day performance averages.
                               </p>
                             </div>
                           </div>
 
                           <div className="bg-gradient-to-br from-emerald-50 to-emerald-100/50 border border-emerald-150 p-5 rounded-xl space-y-2.5 text-left">
-                            <h5 className="text-[11px] font-mono font-bold text-emerald-950 uppercase tracking-wide">
+                            <h5 className="text-xs font-semibold font-mono font-bold text-emerald-950 uppercase tracking-wide">
                               🟢 Justifying High Tier Prices
                             </h5>
-                            <p className="text-[11px] text-slate-650 leading-relaxed font-light font-sans">
+                            <p className="text-xs font-semibold text-slate-650 leading-relaxed font-light font-sans">
                               Automated daily performance snapshots provide empirical audit trials to prove your system speeds, justifying custom implementation setups priced upwards of <strong>$3,500</strong>.
                             </p>
                           </div>
@@ -4290,7 +4290,7 @@ export default function App() {
                                 <h5 className="text-xs font-bold text-slate-900 leading-tight font-sans">
                                   {nd.title}
                                 </h5>
-                                <p className="text-[10px] text-slate-400 mt-1.5 leading-snug font-light">
+                                <p className="text-xs font-semibold tracking-wider text-slate-400 mt-1.5 leading-snug font-light">
                                   {nd.desc}
                                 </p>
                               </div>
@@ -4352,9 +4352,9 @@ export default function App() {
                                 Computes cohort metrics inside the automation parser step using standard math variables:
                               </p>
                               <ul className="list-disc pl-5 space-y-1.5 font-light text-slate-600 font-sans">
-                                <li><strong>Deal ROI Multiplier Formula:</strong> <span className="font-mono bg-slate-100 p-1 text-[11px] rounded inline-block text-indigo-700">{"{{trigger_record.Contract_LTV}} / {{campaign_record.CPL}}"}</span></li>
+                                <li><strong>Deal ROI Multiplier Formula:</strong> <span className="font-mono bg-slate-100 p-1 text-xs font-semibold rounded inline-block text-indigo-700">{"{{trigger_record.Contract_LTV}} / {{campaign_record.CPL}}"}</span></li>
                                 <li><strong>Weighted Cohort CAC:</strong> Calculates the upgraded Customer Acquisition Cost as total cohort spent divided by updated total win count:
-                                  <div className="font-mono text-[10px] bg-slate-100 p-1 rounded mt-1 overflow-x-auto">(&#123;&#123;campaign_record.Total_Spend&#125;&#125; + &#123;&#123;trigger_record.Internal_Labor&#125;&#125;) / (&#123;&#123;campaign_record.Total_Bookings&#125;&#125;)</div>
+                                  <div className="font-mono text-xs font-semibold tracking-wider bg-slate-100 p-1 rounded mt-1 overflow-x-auto">(&#123;&#123;campaign_record.Total_Spend&#125;&#125; + &#123;&#123;trigger_record.Internal_Labor&#125;&#125;) / (&#123;&#123;campaign_record.Total_Bookings&#125;&#125;)</div>
                                 </li>
                               </ul>
                             </div>
@@ -4380,7 +4380,7 @@ export default function App() {
                         <div className="lg:col-span-4 space-y-6 text-left">
                           <div className="bg-slate-900 text-slate-100 rounded-xl p-5 border border-slate-950 shadow-md">
                             <div className="flex justify-between items-center mb-4 font-mono text-[10.5px]">
-                              <span className="text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-widest flex items-center gap-1 font-sans">
+                              <span className="text-xs font-semibold tracking-wider font-mono text-indigo-400 font-bold uppercase tracking-widest flex items-center gap-1 font-sans">
                                 <Sliders className="w-3 h-3" />
                                 Trigger & ROI Scheme JSON (Make.com)
                               </span>
@@ -4398,7 +4398,7 @@ export default function App() {
                                   }, null, 2),
                                   "payload-roi-trigger"
                                 )}
-                                className="text-[10px] bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 font-mono px-2 py-1 rounded select-none cursor-pointer flex items-center gap-1 shrink-0"
+                                className="text-xs font-semibold tracking-wider bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 font-mono px-2 py-1 rounded select-none cursor-pointer flex items-center gap-1 shrink-0"
                               >
                                 {copiedState === "payload-roi-trigger" ? (
                                   <>
@@ -4414,27 +4414,27 @@ export default function App() {
                               </button>
                             </div>
 
-                            <p className="text-[10px] text-slate-400 leading-relaxed font-light mb-4 text-left font-sans">
+                            <p className="text-xs font-semibold tracking-wider text-slate-400 leading-relaxed font-light mb-4 text-left font-sans">
                               This webhook action fires instantly on winning high-ticket agency operations to map revenue metrics mathematically:
                             </p>
 
-                            <pre className="p-3 bg-slate-950 rounded-lg text-[10px] font-mono text-indigo-350 border border-slate-800 overflow-x-auto max-h-56 font-mono">
+                            <pre className="p-3 bg-slate-950 rounded-lg text-xs font-semibold tracking-wider font-mono text-indigo-350 border border-slate-800 overflow-x-auto max-h-56 font-mono">
 {"{\n  \"trigger\": {\n    \"action\": \"Watch_Won_Status_Record\"\n  },\n  \"compute_step\": {\n    \"deal_roi\": \"{{Contract}} / {{CAC}}\"\n  }\n}"}
                             </pre>
 
                             <div className="border-t border-slate-850 mt-5 pt-4 text-left font-sans font-sans">
-                              <span className="text-[10px] font-mono uppercase font-bold text-slate-400 block mb-1">Adspend Realization:</span>
-                              <p className="text-[10px] text-slate-400 leading-normal font-light">
+                              <span className="text-xs font-semibold tracking-wider font-mono uppercase font-bold text-slate-400 block mb-1">Adspend Realization:</span>
+                              <p className="text-xs font-semibold tracking-wider text-slate-400 leading-normal font-light">
                                 Automatically links campaigns parsed from Google, Youtube, and Meta Ads into calculated real business metrics.
                               </p>
                             </div>
                           </div>
 
                           <div className="bg-gradient-to-br from-indigo-50 to-indigo-100/50 border border-indigo-150 p-5 rounded-xl space-y-2.5 text-left">
-                            <h5 className="text-[11px] font-mono font-bold text-indigo-950 uppercase tracking-wide">
+                            <h5 className="text-xs font-semibold font-mono font-bold text-indigo-950 uppercase tracking-wide">
                               🛡️ Seamless CAC Tracking
                             </h5>
-                            <p className="text-[11px] text-slate-650 leading-relaxed font-light font-sans">
+                            <p className="text-xs font-semibold text-slate-650 leading-relaxed font-light font-sans">
                               Attributing exact cost requirements per lead source is key to achieving optimal LTV-to-CAC ratios and scaling agency profits.
                             </p>
                           </div>
@@ -4459,9 +4459,9 @@ export default function App() {
                           <div>
                             <span className="text-[9px] font-mono text-indigo-650 bg-indigo-50 px-1.5 py-0.5 rounded font-bold border border-indigo-100">BUNDLE ARCHIVE</span>
                             <h5 className="text-xs font-bold text-slate-900 mt-2 font-sans">{item.title}</h5>
-                            <p className="text-[10px] text-slate-400 mt-1 font-mono">{item.file}</p>
+                            <p className="text-xs font-semibold tracking-wider text-slate-400 mt-1 font-mono">{item.file}</p>
                           </div>
-                          <div className="mt-4 pt-3 border-t border-dashed border-slate-200 flex justify-between items-center text-[10px] text-slate-500 font-mono font-mono">
+                          <div className="mt-4 pt-3 border-t border-dashed border-slate-200 flex justify-between items-center text-xs font-semibold tracking-wider text-slate-300 font-mono font-mono">
                             <span>Blueprint File size:</span>
                             <span className="font-semibold text-slate-700">{item.lines}</span>
                           </div>
@@ -4484,7 +4484,7 @@ export default function App() {
                         <ClipboardList className="w-6 h-6 text-teal-400" />
                       </div>
                       <div>
-                        <span className="text-[10px] font-mono tracking-widest font-bold text-teal-400 bg-teal-500/10 border border-teal-500/20 uppercase px-2.5 py-1 rounded">
+                        <span className="text-xs font-semibold tracking-wider font-mono tracking-widest font-bold text-teal-400 bg-teal-500/10 border border-teal-500/20 uppercase px-2.5 py-1 rounded">
                           RevOps Deployment Suite
                         </span>
                         <h3 className="text-xl font-bold text-white mt-2.5">
@@ -4514,7 +4514,7 @@ export default function App() {
                           </div>
                           {/* Completion Ratio Badge */}
                           <div className="text-right">
-                            <span className="text-[10px] font-mono text-slate-400 block uppercase">Completion Gauge</span>
+                            <span className="text-xs font-semibold tracking-wider font-mono text-slate-400 block uppercase">Completion Gauge</span>
                             <span className="text-xs font-mono font-bold text-teal-600 animate-scale-in">
                               {Math.round((checkedSubtasks.length / 21) * 100)}% Tasks Done
                             </span>
@@ -4538,7 +4538,7 @@ export default function App() {
                                     ? "bg-slate-900 text-slate-100 border-slate-950 shadow-xs" 
                                     : isAllDone
                                       ? "bg-teal-50 text-teal-700 border-teal-100 hover:bg-teal-100"
-                                      : "bg-slate-50 text-slate-500 border-slate-200 hover:bg-slate-100"
+                                      : "bg-slate-50 text-slate-300 border-slate-200 hover:bg-slate-100"
                                 }`}
                               >
                                 <span>Day</span>
@@ -4555,7 +4555,7 @@ export default function App() {
                               <div>
                                 <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-wider block">Day 01 Objective</span>
                                 <h5 className="font-bold text-slate-900 text-sm">🗂️ Airtable Master Database Setup</h5>
-                                <p className="text-slate-500 mt-1 leading-relaxed font-light font-sans">
+                                <p className="text-slate-300 mt-1 leading-relaxed font-light font-sans">
                                   Duplicate the core database structures. Set up tables, automated formulas, and user roles to align with active client acquisition flows.
                                 </p>
                               </div>
@@ -4592,7 +4592,7 @@ export default function App() {
                               <div>
                                 <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-wider block">Day 02 Objective</span>
                                 <h5 className="font-bold text-slate-900 text-sm">⚡ Webhook Trigger Integration</h5>
-                                <p className="text-slate-500 mt-1 leading-relaxed font-light font-sans">
+                                <p className="text-slate-300 mt-1 leading-relaxed font-light font-sans">
                                   Establish standard webhooks mapping inputs (from site webforms, Typeforms, or Landing Pages) directly as incoming triggers into Make.com/Zapier.
                                 </p>
                               </div>
@@ -4629,7 +4629,7 @@ export default function App() {
                               <div>
                                 <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-wider block">Day 03 Objective</span>
                                 <h5 className="font-bold text-slate-900 text-sm">🔍 Automated Enrichment Setup</h5>
-                                <p className="text-slate-500 mt-1 leading-relaxed font-light font-sans">
+                                <p className="text-slate-300 mt-1 leading-relaxed font-light font-sans">
                                   Bridge corporate enrichment APIs (Clearbit, Apollo or Clay API) into the data intake flow to automatically classify deal size.
                                 </p>
                               </div>
@@ -4666,7 +4666,7 @@ export default function App() {
                               <div>
                                 <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-wider block">Day 04 Objective</span>
                                 <h5 className="font-bold text-slate-900 text-sm">🚨 Sub-4hr SLA Logic Setup</h5>
-                                <p className="text-slate-500 mt-1 leading-relaxed font-light font-sans">
+                                <p className="text-slate-300 mt-1 leading-relaxed font-light font-sans">
                                   Deploy automated timestamps and countdown schedules checking in real-time whether assigned leads have hovered un-contacted.
                                 </p>
                               </div>
@@ -4703,7 +4703,7 @@ export default function App() {
                               <div>
                                 <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-wider block">Day 05 Objective</span>
                                 <h5 className="font-bold text-slate-900 text-sm">💬 Team Routing & Slack Enforcer</h5>
-                                <p className="text-slate-500 mt-1 leading-relaxed font-light font-sans">
+                                <p className="text-slate-300 mt-1 leading-relaxed font-light font-sans">
                                   Unify slack incoming integrations with automatic rep dispatch metrics to optimize incoming assignments.
                                 </p>
                               </div>
@@ -4740,7 +4740,7 @@ export default function App() {
                               <div>
                                 <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-wider block">Day 06 Objective</span>
                                 <h5 className="font-bold text-slate-900 text-sm">💳 Closed Won Stripe Ledger Sync</h5>
-                                <p className="text-slate-500 mt-1 leading-relaxed font-light font-sans">
+                                <p className="text-slate-300 mt-1 leading-relaxed font-light font-sans">
                                   Establish Stripe webhooks linking custom purchases back to Airtable client files for automatic attribution tracking.
                                 </p>
                               </div>
@@ -4777,7 +4777,7 @@ export default function App() {
                               <div>
                                 <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-wider block">Day 07 Objective</span>
                                 <h5 className="font-bold text-slate-900 text-sm">🚀 Ecosystem Hand-off & Live Traffic</h5>
-                                <p className="text-slate-500 mt-1 leading-relaxed font-light font-sans">
+                                <p className="text-slate-300 mt-1 leading-relaxed font-light font-sans">
                                   Audit active pipeline operations, prepare team managers, declare spreadsheet logs obsolete, and open live webhook routers.
                                 </p>
                               </div>
@@ -4822,7 +4822,7 @@ export default function App() {
                             <ShieldCheck className="w-4 h-4 text-emerald-600" />
                             RevOps Deployment Verification
                           </h5>
-                          <p className="text-[11px] text-slate-650 leading-relaxed font-light mt-1 w-11/12 font-sans">
+                          <p className="text-xs font-semibold text-slate-650 leading-relaxed font-light mt-1 w-11/12 font-sans">
                             Check off your daily configurations live! This checklist enforces standard B2B automation procedures so that clients experience absolute zero tech delivery friction upon deployment.
                           </p>
                         </div>
@@ -4852,13 +4852,13 @@ export default function App() {
                           </button>
                         </div>
 
-                        <p className="text-[11px] text-slate-300 leading-normal font-light text-left font-sans">
+                        <p className="text-xs font-semibold text-slate-300 leading-normal font-light text-left font-sans">
                           Verify data matching. Enter custom dummy lead metrics into the JSON sandbox window below, and fire the test trigger simulator to witness dynamic RevOps matching live in console outputs!
                         </p>
 
                         {/* Interactive JSON Sandbox Window */}
                         <div className="space-y-1 text-left font-mono">
-                          <label className="text-[10px] text-zinc-400 uppercase tracking-widest font-bold">
+                          <label className="text-sm font-semibold tracking-wider text-zinc-400 uppercase tracking-widest font-bold">
                             Interactive JSON Payload Data
                           </label>
                           <textarea
@@ -4866,7 +4866,7 @@ export default function App() {
                             onChange={(e) => setSimulationPayload(e.target.value)}
                             disabled={isSimulatingTest}
                             rows={8}
-                            className="w-full text-[11px] font-mono bg-slate-950 p-3.5 rounded-xl border border-slate-800 text-emerald-400 focus:outline-none focus:border-emerald-600 transition disabled:opacity-50 select-text resize-none"
+                            className="w-full text-xs font-semibold font-mono bg-slate-950 p-3.5 rounded-xl border border-slate-800 text-emerald-400 focus:outline-none focus:border-emerald-600 transition disabled:opacity-50 select-text resize-none"
                             placeholder="Type valid JSON payload..."
                           />
                         </div>
@@ -4876,7 +4876,7 @@ export default function App() {
                           type="button"
                           onClick={runSimulationTest}
                           disabled={isSimulatingTest}
-                          className="w-full bg-teal-550 hover:bg-teal-400 text-slate-950 font-bold py-2.5 rounded-lg text-xs font-mono tracking-wider flex items-center justify-center gap-1.5 transition-all shadow-xs cursor-pointer disabled:opacity-50"
+                          className="w-full bg-teal-550 hover:bg-teal-400 text-slate-950 font-bold py-2.5 rounded-lg text-base font-semibold min-h-[44px] font-mono tracking-wider flex items-center justify-center gap-1.5 transition-all shadow-xs cursor-pointer disabled:opacity-50"
                         >
                           {isSimulatingTest ? (
                             <>
@@ -4893,12 +4893,12 @@ export default function App() {
 
                         {/* Sandbox Console Output logs */}
                         <div className="space-y-1.5 text-left font-mono">
-                          <h5 className="text-[10px] text-zinc-400 uppercase font-bold tracking-widest">
+                          <h5 className="text-xs font-semibold tracking-wider text-zinc-400 uppercase font-bold tracking-widest">
                             Live Troubleshooting Console Outputs
                           </h5>
                           <div className="bg-slate-950/80 rounded-xl border border-slate-850 p-3 max-h-56 min-h-[148px] overflow-y-auto space-y-1 block leading-normal text-left shadow-inner">
                             {simulationLogs.length === 0 ? (
-                              <div className="text-[10px] text-slate-500 p-4 text-center font-sans">
+                              <div className="text-xs font-semibold tracking-wider text-slate-300 p-4 text-center font-sans">
                                 Console clean. Click button above to execute simulation run trace...
                               </div>
                             ) : (
@@ -4938,7 +4938,7 @@ export default function App() {
                       <h4 className="text-base font-bold text-slate-900 mt-1.5 font-sans">
                         📝 Core Team SOPs (Copy & Paste Frameworks)
                       </h4>
-                      <p className="text-xs text-slate-500 font-light mt-1 font-sans">
+                      <p className="text-xs text-slate-300 font-light mt-1 font-sans">
                         Equip your sales team with brief, battle-tested operational rules. These clear procedures guarantee zero dropped threads and maximize outbound-to-close metrics.
                       </p>
                     </div>
@@ -4959,7 +4959,7 @@ export default function App() {
                                 const text = `SALES-SOP-01: LEAD TRIAGE & ENRICHMENT REVIEW\n\n1. REVEAL ALERT: When a lead triggers in Slack, open the dynamic Airtable URL instantly.\n2. SCREEN FIRMOGRAPHICS: Confirm the automated technographics tags accurately match high-value boutique profiles (budget scope / tech parameters).\n3. PREPARE EMAIL: Customize outbound email openers using the dynamic templates generated for their specific target platform.\n4. OUTREACH CADENCE: Dispatch first-touch messages within 4 hours. Record outreach activity directly in the SDR Lead database status column.`;
                                 handleCopyText(text, "sop1-copy");
                               }}
-                              className="text-[10px] bg-white border border-slate-200 hover:bg-slate-50 text-slate-500 hover:text-slate-900 px-2.5 py-1 rounded flex items-center gap-1 font-mono hover:shadow-xs transition cursor-pointer"
+                              className="text-xs font-semibold tracking-wider bg-white border border-slate-200 hover:bg-slate-50 text-slate-300 hover:text-slate-900 px-2.5 py-1 rounded flex items-center gap-1 font-mono hover:shadow-xs transition cursor-pointer"
                             >
                               {copiedState === "sop1-copy" ? (
                                 <>
@@ -4995,7 +4995,7 @@ export default function App() {
                           </ol>
                         </div>
                         
-                        <div className="pt-3.5 border-t border-slate-200/50 text-[10px] font-mono text-indigo-650 flex items-center gap-1.5 font-mono">
+                        <div className="pt-3.5 border-t border-slate-200/50 text-xs font-semibold tracking-wider font-mono text-indigo-650 flex items-center gap-1.5 font-mono">
                           <CheckSquare className="w-3.5 h-3.5 text-indigo-500" />
                           <span>Standard Operating Protocol &bull; Lead Audit Enforcer</span>
                         </div>
@@ -5015,7 +5015,7 @@ export default function App() {
                                 const text = `REVOPS-SOP-02: SLA BREACH RESPONSE PROTOCOL\n\n1. BREACH RECOGNITION: Immediate escalation occurs if a lead sits in 'Review' status for 4+ hours, firing the 🚨 CRITICAL BREACH Discord/Slack notification.\n2. TEAM REDIRECT: Team managers or senior executives must instantly assume temporary ownership of the breached lead file.\n3. EXPRESS OUTREACH: Execute direct-call or prioritized outreach in under 10 minutes from breach alert trigger.\n4. ROOT-CAUSE AUDIT: File a brief operational log note explaining the rep dispatch delay to guide routine staffing reviews.`;
                                 handleCopyText(text, "sop2-copy");
                               }}
-                              className="text-[10px] bg-white border border-slate-200 hover:bg-slate-50 text-slate-500 hover:text-slate-900 px-2.5 py-1 rounded flex items-center gap-1 font-mono hover:shadow-xs transition cursor-pointer"
+                              className="text-xs font-semibold tracking-wider bg-white border border-slate-200 hover:bg-slate-50 text-slate-300 hover:text-slate-900 px-2.5 py-1 rounded flex items-center gap-1 font-mono hover:shadow-xs transition cursor-pointer"
                             >
                               {copiedState === "sop2-copy" ? (
                                 <>
@@ -5051,7 +5051,7 @@ export default function App() {
                           </ol>
                         </div>
                         
-                        <div className="pt-3.5 border-t border-slate-200/50 text-[10px] font-mono text-rose-750 flex items-center gap-1.5 font-mono">
+                        <div className="pt-3.5 border-t border-slate-200/50 text-xs font-semibold tracking-wider font-mono text-rose-750 flex items-center gap-1.5 font-mono">
                           <AlertCircle className="w-3.5 h-3.5 text-rose-600 animate-pulse" />
                           <span>Emergency Protocol &bull; Pipeline Recovery Safeguard</span>
                         </div>
@@ -5073,9 +5073,9 @@ export default function App() {
               
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 items-stretch">
                 <div className="bg-white border border-slate-200 p-3.5 rounded-lg text-center flex flex-col justify-center">
-                  <span className="text-[9px] font-mono uppercase bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded-sm inline-block mx-auto mb-1">Inbound Asset</span>
+                  <span className="text-[9px] font-mono uppercase bg-slate-100 text-slate-300 px-1.5 py-0.5 rounded-sm inline-block mx-auto mb-1">Inbound Asset</span>
                   <div className="text-xs font-bold text-slate-900 leading-tight">Gumroad Template Sale</div>
-                  <div className="text-[10px] text-slate-400 mt-1 font-mono">{pricePoint || "$350"} Standard Retainer License</div>
+                  <div className="text-xs font-semibold tracking-wider text-slate-400 mt-1 font-mono">{pricePoint || "$350"} Standard Retainer License</div>
                 </div>
                 
                 <div className="bg-white border border-slate-200 p-3.5 rounded-lg text-center flex flex-col justify-center items-center relative">
@@ -5084,7 +5084,7 @@ export default function App() {
                   </div>
                   <span className="text-[9px] font-mono uppercase bg-indigo-50 text-indigo-600 px-1.5 py-0.5 rounded-sm inline-block mb-1">Action Bridge</span>
                   <div className="text-xs font-bold text-slate-900 leading-tight">Targeted SLA Setup Pitch</div>
-                  <div className="text-[10px] text-indigo-500 mt-1 font-mono">Outbound Sequence Trigger</div>
+                  <div className="text-xs font-semibold tracking-wider text-indigo-500 mt-1 font-mono">Outbound Sequence Trigger</div>
                   <div className="hidden sm:block absolute -right-1.5 top-1/2 -translate-y-1/2 bg-white rounded-full p-0.5 border border-slate-200 z-10 text-slate-400">
                     <ChevronRight className="w-3 h-3" />
                   </div>
@@ -5093,7 +5093,7 @@ export default function App() {
                 <div className="bg-white border border-slate-200 p-3.5 rounded-lg text-center flex flex-col justify-center">
                   <span className="text-[9px] font-mono uppercase bg-sky-50 text-sky-700 px-1.5 py-0.5 rounded-sm inline-block mx-auto mb-1">Enterprise Upsell</span>
                   <div className="text-xs font-bold text-slate-900 leading-tight">Bespoke Enterprise Implementation</div>
-                  <div className="text-[10px] text-slate-400 mt-1 font-mono">{upsellPricePoint || "$3,500"}+ Retainer Contract</div>
+                  <div className="text-xs font-semibold tracking-wider text-slate-400 mt-1 font-mono">{upsellPricePoint || "$3,500"}+ Retainer Contract</div>
                 </div>
               </div>
             </div>
@@ -5111,7 +5111,7 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <div className="md:col-span-2">
-              <span className="bg-indigo-500/20 text-indigo-300 border border-indigo-400/20 text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-1 rounded">
+              <span className="bg-indigo-500/20 text-indigo-300 border border-indigo-400/20 text-xs font-semibold tracking-wider font-mono font-bold uppercase tracking-wider px-2 py-1 rounded">
                 Executive Playbook Strategy
               </span>
               <h3 className="text-2xl font-black text-white mt-4 tracking-tight leading-none">
